@@ -3,189 +3,213 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex, nofollow">
-<title>New Breed — Head of Services · Candidate Analysis</title>
+<title>New Breed — Head of Services · Candidate Analysis v3.2</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
-    --nb-orange: #F04E23;
-    --nb-orange-light: #FEF0EC;
-    --nb-orange-dark: #C03A18;
-    --nb-navy: #0C0E1F;
-    --nb-navy2: #161828;
-    --nb-navy3: #1F2240;
-    --nb-green: #2ECC8A;
-    --nb-green-light: #E8FAF3;
-    --nb-green-dark: #1A7A52;
-    --blue: #2563EB;
-    --blue-light: #EFF6FF;
-    --teal: #0D9488;
-    --teal-light: #F0FDFA;
-    --amber: #B45309;
-    --amber-light: #FFFBEB;
-    --red: #DC2626;
-    --red-light: #FEF2F2;
-    --warn: #92400E;
-    --warn-light: #FFFBEB;
-    --green2: #15803D;
-    --green2-light: #F0FDF4;
-    --gray: #6B7280;
-    --gray-light: #F9FAFB;
-    --border: #E5E7EB;
-    --text: #111827;
-    --text-muted: #6B7280;
-    --bg: #F3F4F6;
-    --card: #ffffff;
+    --nb-orange: #F04E23; --nb-orange-light: #FEF0EC; --nb-orange-dark: #C03A18;
+    --nb-navy: #0C0E1F; --nb-navy2: #161828;
+    --nb-green: #2ECC8A; --nb-green-light: #E8FAF3; --nb-green-dark: #1A7A52;
+    --blue: #2563EB; --blue-light: #EFF6FF;
+    --amber: #B45309; --amber-light: #FFFBEB;
+    --red: #DC2626; --red-light: #FEF2F2; --red-dark: #991B1B;
+    --slate: #475569; --slate-light: #F1F5F9;
+    --warn: #92400E; --warn-light: #FFFBEB;
+    --green2: #15803D; --green2-light: #F0FDF4;
+    --gray: #6B7280; --gray-light: #F9FAFB; --border: #E5E7EB;
+    --text: #111827; --text-muted: #6B7280; --bg: #F3F4F6; --card: #ffffff;
   }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif; background: var(--bg); color: var(--text); font-size: 14px; line-height: 1.5; }
-
-  .header { background: var(--nb-navy); color: #fff; padding: 0 40px; display: flex; justify-content: space-between; align-items: stretch; }
-  .header-left { display: flex; align-items: center; gap: 20px; padding: 22px 0; border-right: 1px solid rgba(255,255,255,0.08); padding-right: 28px; }
-  .nb-logo-mark { width: 40px; height: 40px; background: var(--nb-orange); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; color: #fff; letter-spacing: -1px; flex-shrink: 0; }
-  .header-left-text .brand { font-size: 13px; font-weight: 700; color: #fff; letter-spacing: 0.01em; }
-  .header-left-text .sub { font-size: 11px; color: rgba(255,255,255,0.45); margin-top: 1px; }
-  .header-center { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 22px 28px; }
-  .header-center h1 { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 3px; }
-  .header-center p { font-size: 12px; color: rgba(255,255,255,0.5); }
-  .header-right { display: flex; align-items: center; gap: 0; padding: 22px 0 22px 28px; border-left: 1px solid rgba(255,255,255,0.08); }
-  .hstat { text-align: center; padding: 0 20px; border-right: 1px solid rgba(255,255,255,0.08); }
+  .header { background: var(--nb-navy); color: #fff; padding: 0 48px; display: flex; justify-content: space-between; align-items: stretch; }
+  .header-left { display: flex; align-items: center; gap: 18px; padding: 24px 0; border-right: 1px solid rgba(255,255,255,0.08); padding-right: 28px; }
+  .nb-logo-mark { width: 42px; height: 42px; background: var(--nb-orange); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 17px; color: #fff; flex-shrink: 0; }
+  .header-left-text .brand { font-size: 13px; font-weight: 700; color: #fff; }
+  .header-left-text .sub { font-size: 11px; color: rgba(255,255,255,0.4); margin-top: 2px; }
+  .header-center { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 24px 32px; }
+  .header-center h1 { font-size: 19px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+  .header-center p { font-size: 12px; color: rgba(255,255,255,0.45); }
+  .header-right { display: flex; align-items: center; padding: 24px 0 24px 28px; border-left: 1px solid rgba(255,255,255,0.08); }
+  .hstat { text-align: center; padding: 0 22px; border-right: 1px solid rgba(255,255,255,0.08); }
   .hstat:last-child { border-right: none; }
-  .hstat .lbl { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.4); margin-bottom: 3px; }
+  .hstat .lbl { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.38); margin-bottom: 4px; }
   .hstat .val { font-size: 15px; font-weight: 700; color: #fff; }
   .hstat .val.orange { color: var(--nb-orange); }
   .hstat .val.green { color: var(--nb-green); }
-
-  .nav { background: var(--nb-navy2); border-bottom: 1px solid rgba(255,255,255,0.06); padding: 0 40px; display: flex; gap: 0; position: sticky; top: 0; z-index: 100; }
-  .nav-btn { padding: 13px 18px; font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.45); cursor: pointer; border: none; background: none; border-bottom: 2px solid transparent; transition: all 0.15s; white-space: nowrap; letter-spacing: 0.02em; text-transform: uppercase; }
+  .conf-bar { background: var(--nb-orange); color: #fff; text-align: center; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 7px 48px; }
+  .nav { background: var(--nb-navy2); border-bottom: 1px solid rgba(255,255,255,0.06); padding: 0 48px; display: flex; position: sticky; top: 0; z-index: 100; }
+  .nav-btn { padding: 14px 15px; font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.42); cursor: pointer; border: none; background: none; border-bottom: 2px solid transparent; transition: all 0.15s; white-space: nowrap; letter-spacing: 0.03em; text-transform: uppercase; }
   .nav-btn.active { color: var(--nb-orange); border-bottom-color: var(--nb-orange); }
-  .nav-btn:hover:not(.active) { color: rgba(255,255,255,0.8); }
-
-  .page { display: none; padding: 28px 40px; max-width: 1200px; margin: 0 auto; }
+  .nav-btn:hover:not(.active) { color: rgba(255,255,255,0.75); }
+  .nav-btn.changelog { color: rgba(255,200,100,0.6); }
+  .nav-btn.changelog.active { color: #FCD34D; border-bottom-color: #FCD34D; }
+  .v-badge { background: rgba(240,78,35,0.18); color: var(--nb-orange); font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-left: 8px; vertical-align: middle; }
+  .page { display: none; padding: 32px 48px; max-width: 1220px; margin: 0 auto; }
   .page.active { display: block; }
-
-  .mandate { background: var(--nb-navy); color: #fff; border-radius: 10px; padding: 18px 24px; margin-bottom: 24px; display: flex; gap: 0; flex-wrap: wrap; overflow: hidden; }
-  .mandate-item { display: flex; flex-direction: column; gap: 3px; padding: 0 24px; border-right: 1px solid rgba(255,255,255,0.1); }
+  .mandate { background: var(--nb-navy); color: #fff; border-radius: 10px; padding: 18px 24px; margin-bottom: 28px; display: flex; flex-wrap: wrap; }
+  .mandate-item { display: flex; flex-direction: column; gap: 3px; padding: 0 26px; border-right: 1px solid rgba(255,255,255,0.1); }
   .mandate-item:first-child { padding-left: 0; }
   .mandate-item:last-child { border-right: none; }
-  .mandate-item .lbl { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.4); }
+  .mandate-item .lbl { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.38); }
   .mandate-item .val { font-size: 14px; font-weight: 700; color: #fff; }
   .mandate-item .val.orange { color: var(--nb-orange); }
   .mandate-item .val.green { color: var(--nb-green); }
-
-  .section-head { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-bottom: 12px; }
-
-  .cand-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-bottom: 28px; }
-  .cand-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; position: relative; overflow: hidden; cursor: pointer; transition: box-shadow 0.15s, transform 0.1s; }
-  .cand-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.09); transform: translateY(-1px); }
-  .cand-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+  .mandate-item .val.red { color: #F87171; }
+  .section-head { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-bottom: 14px; }
+  .cand-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; margin-bottom: 32px; }
+  .cand-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 22px; position: relative; overflow: hidden; cursor: pointer; transition: box-shadow 0.15s, transform 0.1s; }
+  .cand-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.09); transform: translateY(-2px); }
+  .cand-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; }
   .cand-card.rank1::before { background: var(--nb-orange); }
   .cand-card.rank2::before { background: var(--nb-green); }
-  .cand-card.rank3::before { background: var(--amber); }
-  .rank-pill { display: inline-flex; align-items: center; gap: 5px; font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 99px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .cand-card.not-adv::before { background: var(--slate); }
+  .rank-pill { display: inline-flex; align-items: center; font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 99px; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.05em; }
   .rank1 .rank-pill { background: var(--nb-orange-light); color: var(--nb-orange-dark); }
   .rank2 .rank-pill { background: var(--nb-green-light); color: var(--nb-green-dark); }
-  .rank3 .rank-pill { background: var(--amber-light); color: var(--amber); }
-  .cand-name { font-size: 16px; font-weight: 700; margin-bottom: 2px; color: var(--nb-navy); }
-  .cand-role { font-size: 11px; color: var(--text-muted); margin-bottom: 14px; }
+  .not-adv .rank-pill { background: var(--slate-light); color: var(--slate); }
+  .intv2-card-banner { font-size: 10px; font-weight: 600; padding: 5px 10px; border-radius: 6px; margin-bottom: 10px; }
+  .banner-green { background: var(--green2-light); color: var(--green2); }
+  .cand-name { font-size: 17px; font-weight: 700; margin-bottom: 2px; color: var(--nb-navy); }
+  .cand-role { font-size: 11px; color: var(--text-muted); margin-bottom: 16px; }
   .grade-row { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
-  .grade-big { font-size: 34px; font-weight: 800; line-height: 1; }
+  .grade-big { font-size: 36px; font-weight: 800; line-height: 1; }
   .rank1 .grade-big { color: var(--nb-orange); }
   .rank2 .grade-big { color: var(--nb-green-dark); }
-  .rank3 .grade-big { color: var(--amber); }
-  .score-badge { background: var(--gray-light); border: 1px solid var(--border); border-radius: 99px; padding: 3px 12px; font-size: 12px; font-weight: 700; color: var(--gray); }
-  .dim-list { display: flex; flex-direction: column; gap: 7px; margin-bottom: 14px; }
+  .not-adv .grade-big { color: var(--slate); }
+  .score-badge { background: var(--gray-light); border: 1px solid var(--border); border-radius: 99px; padding: 3px 13px; font-size: 12px; font-weight: 700; color: var(--gray); }
+  .dim-list { display: flex; flex-direction: column; gap: 7px; margin-bottom: 16px; }
   .dim-row { display: flex; align-items: center; gap: 8px; }
-  .dim-lbl { font-size: 10px; color: var(--text-muted); width: 108px; flex-shrink: 0; font-weight: 500; }
+  .dim-lbl { font-size: 10px; color: var(--text-muted); width: 110px; flex-shrink: 0; font-weight: 500; }
   .bar-bg { flex: 1; height: 5px; background: #F3F4F6; border-radius: 99px; overflow: hidden; }
   .bar-fill { height: 100%; border-radius: 99px; }
   .rank1 .bar-fill { background: var(--nb-orange); }
   .rank2 .bar-fill { background: var(--nb-green); }
-  .rank3 .bar-fill { background: var(--amber); }
+  .not-adv .bar-fill { background: var(--slate); }
   .dim-num { font-size: 10px; color: var(--text-muted); min-width: 22px; text-align: right; font-weight: 700; }
   .tag-row { display: flex; flex-wrap: wrap; gap: 4px; }
   .tag { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 4px; }
   .tag.ok { background: var(--green2-light); color: var(--green2); }
   .tag.warn { background: var(--warn-light); color: var(--warn); }
-  .tag.risk { background: var(--red-light); color: var(--red); }
-  .flag-banner { background: var(--warn-light); border: 1px solid #FCD34D; border-radius: 6px; padding: 8px 12px; font-size: 11px; color: var(--warn); margin-bottom: 12px; font-weight: 500; }
-
+  .tag.neutral { background: var(--slate-light); color: var(--slate); }
+  /* Scorecard delta */
   .comp-table-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 28px; }
-  .comp-table { width: 100%; border-collapse: collapse; }
-  .comp-table thead tr { background: var(--nb-navy); }
-  .comp-table th { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.6); padding: 12px 16px; text-align: left; }
-  .comp-table th:first-child { color: rgba(255,255,255,0.4); }
-  .comp-table td { padding: 10px 16px; border-bottom: 1px solid #F3F4F6; font-size: 12px; vertical-align: middle; color: var(--text); }
-  .comp-table tr:last-child td { border-bottom: none; }
-  .comp-table tr:hover td { background: #FAFAFA; }
-  .comp-table td:first-child { font-weight: 600; color: var(--text-muted); font-size: 11px; }
-  .yes { color: var(--green2); font-weight: 700; }
-  .no { color: var(--red); font-weight: 700; }
-  .maybe { color: var(--amber); font-weight: 700; }
-
-  .detail-hero { background: var(--nb-navy); border-radius: 12px; padding: 24px; margin-bottom: 18px; display: flex; gap: 20px; align-items: flex-start; }
-  .avatar { width: 54px; height: 54px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 800; color: #fff; flex-shrink: 0; }
-  .detail-hero-info h2 { font-size: 20px; font-weight: 800; margin-bottom: 3px; color: #fff; }
-  .detail-hero-info .role { font-size: 12px; color: rgba(255,255,255,0.55); margin-bottom: 10px; }
-  .hero-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
-  .hero-tag { font-size: 10px; font-weight: 700; padding: 3px 9px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.04em; }
-  .hero-tag.ok { background: rgba(46,204,138,0.15); color: var(--nb-green); }
-  .hero-tag.rank { background: var(--nb-orange); color: #fff; }
-  .hero-tag.warn { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.6); }
-  .hero-tag.risk { background: rgba(220,38,38,0.15); color: #FCA5A5; }
-  .link-row { display: flex; gap: 8px; flex-wrap: wrap; }
-  .hero-link { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; padding: 5px 12px; border-radius: 6px; text-decoration: none; transition: opacity 0.15s; }
-  .hero-link:hover { opacity: 0.85; }
-  .hero-link.li { background: rgba(255,255,255,0.1); color: #fff; }
-  .hero-link.rec { background: var(--nb-orange); color: #fff; }
-  .hero-link.doc { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.7); border: 1px solid rgba(255,255,255,0.12); }
-  .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 18px; }
-  .detail-box { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
-  .detail-box h4 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 12px; }
-  .detail-box ul { list-style: none; }
-  .detail-box ul li { font-size: 12px; color: var(--text); padding: 5px 0; border-bottom: 1px solid #F3F4F6; display: flex; gap: 8px; line-height: 1.5; }
-  .detail-box ul li:last-child { border-bottom: none; }
-  .detail-box ul li::before { content: "→"; color: var(--nb-orange); flex-shrink: 0; font-weight: 700; }
-  .timeline { display: flex; flex-direction: column; gap: 12px; }
-  .tl-item { display: flex; gap: 12px; align-items: flex-start; }
-  .tl-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
-  .tl-content { font-size: 12px; }
-  .tl-company { font-weight: 700; color: var(--nb-navy); }
-  .tl-role { color: var(--text-muted); font-size: 11px; line-height: 1.5; }
-  .verdict-box { border-radius: 10px; padding: 16px 18px; margin-bottom: 18px; border-left: 4px solid; }
+  .comp-table-wrap table { width: 100%; border-collapse: collapse; }
+  .comp-table-wrap thead tr { background: var(--nb-navy); }
+  .comp-table-wrap th { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.48); padding: 12px 16px; text-align: left; }
+  .comp-table-wrap td { padding: 11px 16px; border-bottom: 1px solid #F3F4F6; font-size: 12px; vertical-align: top; }
+  .comp-table-wrap tr:last-child td { border-bottom: none; }
+  .comp-table-wrap td:first-child { font-weight: 600; color: var(--text-muted); font-size: 11px; width: 18%; }
+  .delta-wrap { display: flex; flex-direction: column; gap: 3px; }
+  .delta-prev { font-size: 10px; color: #CBD5E1; text-decoration: line-through; font-weight: 500; }
+  .delta-now { font-weight: 700; font-size: 13px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .delta-badge { font-size: 9px; font-weight: 800; padding: 1px 6px; border-radius: 99px; white-space: nowrap; }
+  .delta-down { background: var(--red-light); color: var(--red-dark); }
+  .delta-down2 { background: #FEE2E2; color: #7F1D1D; }
+  .delta-ok { background: var(--green2-light); color: var(--green2); }
+  .delta-up { background: #ECFDF5; color: #065F46; }
+  .delta-watch { background: var(--warn-light); color: var(--warn); }
+  .delta-hold { background: var(--gray-light); color: var(--gray); }
+  .intv2-note { font-size: 10px; color: var(--text-muted); line-height: 1.45; margin-top: 3px; font-style: italic; }
+  .s-high { color: var(--nb-green-dark); }
+  .s-mid { color: var(--amber); }
+  .s-low { color: var(--slate); }
+  .comp-legend { display: flex; gap: 12px; flex-wrap: wrap; padding: 11px 16px; background: var(--gray-light); border-top: 1px solid var(--border); }
+  .comp-legend span { font-size: 10px; font-weight: 600; display: flex; align-items: center; gap: 5px; color: var(--text-muted); }
+  /* Profile */
+  .verdict-box { border-radius: 10px; padding: 16px 20px; margin-bottom: 20px; border-left: 4px solid; }
   .verdict-box.rank1 { background: var(--nb-orange-light); border-color: var(--nb-orange); }
   .verdict-box.rank2 { background: var(--nb-green-light); border-color: var(--nb-green); }
-  .verdict-box.rank3 { background: var(--amber-light); border-color: var(--amber); }
-  .verdict-box h4 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 7px; }
+  .verdict-box.not-adv { background: var(--slate-light); border-color: var(--slate); }
+  .verdict-box h4 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; }
   .verdict-box.rank1 h4 { color: var(--nb-orange-dark); }
   .verdict-box.rank2 h4 { color: var(--nb-green-dark); }
-  .verdict-box.rank3 h4 { color: var(--amber); }
-  .verdict-box p { font-size: 13px; line-height: 1.7; color: var(--text); }
-
-  .next-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-bottom: 24px; }
-  .next-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
-  .next-card .nc-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .verdict-box.not-adv h4 { color: var(--slate); }
+  .verdict-box p { font-size: 13px; line-height: 1.75; color: var(--text); }
+  .detail-hero { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 22px; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 22px; }
+  .avatar { width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px; color: #fff; flex-shrink: 0; }
+  .detail-hero-info h2 { font-size: 21px; font-weight: 800; color: var(--nb-navy); margin-bottom: 3px; }
+  .detail-hero-info .role { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+  .contact-row { display: flex; gap: 14px; flex-wrap: wrap; font-size: 11px; color: var(--text-muted); margin-bottom: 10px; }
+  .hero-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .hero-tag { font-size: 10px; font-weight: 700; padding: 3px 11px; border-radius: 99px; }
+  .hero-tag.rank1 { background: var(--nb-orange); color: #fff; }
+  .hero-tag.rank2 { background: var(--nb-green-dark); color: #fff; }
+  .hero-tag.ok { background: var(--green2-light); color: var(--green2); }
+  .hero-tag.warn { background: var(--warn-light); color: var(--warn); }
+  .hero-tag.neutral { background: var(--slate-light); color: var(--slate); }
+  .link-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .hero-link { font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 6px; text-decoration: none; }
+  .hero-link.li { background: #EFF6FF; color: var(--blue); }
+  .hero-link.rec { background: var(--nb-orange-light); color: var(--nb-orange-dark); }
+  .hero-link.doc { background: var(--nb-green-light); color: var(--nb-green-dark); }
+  .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .detail-box { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+  .detail-box h4 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 13px; }
+  .detail-box ul { list-style: none; }
+  .detail-box ul li { font-size: 12px; color: var(--text); padding: 6px 0; border-bottom: 1px solid #F3F4F6; display: flex; gap: 8px; line-height: 1.55; }
+  .detail-box ul li:last-child { border-bottom: none; }
+  .detail-box ul li::before { content: "→"; color: var(--nb-orange); flex-shrink: 0; font-weight: 700; }
+  .timeline { display: flex; flex-direction: column; gap: 13px; }
+  .tl-item { display: flex; gap: 12px; align-items: flex-start; }
+  .tl-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+  .tl-company { font-weight: 700; font-size: 12px; color: var(--nb-navy); }
+  .tl-role { color: var(--text-muted); font-size: 11px; line-height: 1.5; }
+  /* Interview 2 assessment */
+  .intv2-assess { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 18px; }
+  .intv2-assess .assess-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; flex-wrap: wrap; gap: 8px; }
+  .intv2-assess .assess-title { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); }
+  .intv2-assess .assess-verdict { font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 99px; }
+  .verdict-advance { background: var(--green2-light); color: var(--green2); }
+  .verdict-notadv { background: var(--slate-light); color: var(--slate); }
+  .assess-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+  .assess-item { background: var(--gray-light); border-radius: 8px; padding: 12px 14px; border: 1px solid var(--border); }
+  .assess-item .a-lbl { font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.09em; margin-bottom: 6px; }
+  .a-lbl.pos { color: var(--green2); }
+  .a-lbl.watch { color: var(--amber); }
+  .a-lbl.concern { color: var(--slate); }
+  .assess-item .a-txt { font-size: 12px; color: var(--text); line-height: 1.6; }
+  .assess-summary { background: var(--nb-navy); color: rgba(255,255,255,0.82); border-radius: 8px; padding: 14px 16px; font-size: 12px; line-height: 1.7; margin-bottom: 12px; }
+  .assess-summary strong { color: #fff; }
+  /* Action item */
+  .action-item { display: flex; gap: 10px; align-items: flex-start; background: #FFFBEB; border: 1px solid #FCD34D; border-radius: 8px; padding: 12px 14px; font-size: 12px; color: var(--warn); line-height: 1.6; margin-bottom: 18px; }
+  .action-item .ai-badge { font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; background: #FCD34D; color: var(--nb-navy); padding: 2px 7px; border-radius: 4px; white-space: nowrap; margin-top: 2px; flex-shrink: 0; }
+  .action-item .ai-text { color: var(--text); }
+  .action-item .ai-text strong { color: var(--nb-navy); }
+  /* Next steps */
+  .next-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; margin-bottom: 28px; }
+  .next-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+  .next-card .nc-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
   .nc-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
   .next-card h4 { font-size: 14px; font-weight: 700; color: var(--nb-navy); }
-  .next-card .status { display: inline-block; font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 4px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .next-card .status { display: inline-block; font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 4px; margin-bottom: 13px; text-transform: uppercase; letter-spacing: 0.05em; }
   .status.advance { background: var(--green2-light); color: var(--green2); }
-  .status.flag { background: var(--warn-light); color: var(--warn); }
+  .status.notadv { background: var(--slate-light); color: var(--slate); }
   .next-card ol { padding-left: 16px; display: flex; flex-direction: column; gap: 7px; }
-  .next-card ol li { font-size: 12px; color: var(--text); line-height: 1.5; }
-  .criteria-table { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 24px; }
+  .next-card ol li { font-size: 12px; color: var(--text); line-height: 1.55; }
+  .criteria-table { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 28px; }
   .criteria-table table { width: 100%; border-collapse: collapse; }
   .criteria-table thead tr { background: var(--nb-navy); }
-  .criteria-table th { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.5); padding: 11px 14px; text-align: left; }
-  .criteria-table td { padding: 10px 14px; border-bottom: 1px solid #F3F4F6; font-size: 12px; vertical-align: top; color: var(--text); }
+  .criteria-table th { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.48); padding: 12px 16px; text-align: left; }
+  .criteria-table td { padding: 11px 16px; border-bottom: 1px solid #F3F4F6; font-size: 12px; vertical-align: top; color: var(--text); }
   .criteria-table tr:last-child td { border-bottom: none; }
-  .criteria-table td:first-child { font-weight: 700; color: var(--nb-navy); font-size: 12px; }
+  .criteria-table td:first-child { font-weight: 700; color: var(--nb-navy); }
   .q-item { margin-bottom: 7px; padding-left: 14px; position: relative; line-height: 1.5; }
   .q-item::before { content: "Q"; position: absolute; left: 0; font-size: 9px; font-weight: 800; color: var(--nb-orange); top: 2px; }
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 24px; }
-
-  .footer { background: var(--nb-navy); color: rgba(255,255,255,0.3); font-size: 11px; display: flex; align-items: center; justify-content: space-between; padding: 14px 40px; margin-top: 32px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 28px; }
+  /* Change log */
+  .cl-table { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 28px; }
+  .cl-table table { width: 100%; border-collapse: collapse; }
+  .cl-table thead tr { background: var(--nb-navy); }
+  .cl-table th { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.48); padding: 12px 16px; text-align: left; }
+  .cl-table td { padding: 11px 16px; border-bottom: 1px solid #F3F4F6; font-size: 12px; vertical-align: top; color: var(--text); line-height: 1.5; }
+  .cl-table tr:last-child td { border-bottom: none; }
+  .cl-badge { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 4px; }
+  .cl-badge.update { background: #EFF6FF; color: var(--blue); }
+  .cl-badge.new { background: var(--green2-light); color: var(--green2); }
+  .cl-badge.restored { background: var(--warn-light); color: var(--warn); }
+  .footer { background: var(--nb-navy); color: rgba(255,255,255,0.28); font-size: 11px; display: flex; align-items: center; justify-content: space-between; padding: 16px 48px; margin-top: 40px; }
   .footer a { color: var(--nb-orange); text-decoration: none; }
-  .footer-logo { display: flex; align-items: center; gap: 8px; }
-  .footer-logo .mark { width: 22px; height: 22px; background: var(--nb-orange); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 9px; color: #fff; }
+  .footer-logo { display: flex; align-items: center; gap: 10px; }
+  .footer-mark { width: 22px; height: 22px; background: var(--nb-orange); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 9px; color: #fff; }
 </style>
 </head>
 <body>
@@ -199,26 +223,28 @@
     </div>
   </div>
   <div class="header-center">
-    <h1>Head of Services — Candidate Analysis</h1>
-    <p>Executive Search Partner: True Search &nbsp;·&nbsp; Hiring Manager: Taylor Forest (COO/CSO) &nbsp;·&nbsp; March 2026 &nbsp;·&nbsp; Confidential</p>
+    <h1>Head of Services — Candidate Analysis <span class="v-badge">v3.2</span></h1>
+    <p>Executive Search Partner: True Search &nbsp;·&nbsp; Hiring Manager: Taylor Forest, COO/CSO &nbsp;·&nbsp; April 3, 2026 &nbsp;·&nbsp; Confidential</p>
   </div>
   <div class="header-right">
     <div class="hstat"><div class="lbl">Candidates</div><div class="val">3</div></div>
     <div class="hstat"><div class="lbl">Revenue Target</div><div class="val orange">$20M+</div></div>
     <div class="hstat"><div class="lbl">EBITDA Target</div><div class="val green">&gt;22%</div></div>
-    <div class="hstat"><div class="lbl">Team Size</div><div class="val">55</div></div>
+    <div class="hstat"><div class="lbl">Advancing</div><div class="val green">2 of 3</div></div>
   </div>
 </div>
+<div class="conf-bar">Strictly Confidential &nbsp;·&nbsp; For Authorized Recipients Only &nbsp;·&nbsp; Do Not Distribute</div>
 
 <div class="nav">
   <button class="nav-btn active" onclick="show('overview')">Overview</button>
   <button class="nav-btn" onclick="show('henwood')">Matt Henwood</button>
   <button class="nav-btn" onclick="show('scherder')">Patrick Scherder</button>
   <button class="nav-btn" onclick="show('andres')">Andrés Gluecksmann</button>
-  <button class="nav-btn" onclick="show('nextsteps')">Next Steps</button>
+  <button class="nav-btn" onclick="show('nextsteps')">Recommendations</button>
+  <button class="nav-btn changelog" onclick="show('changelog')">⚡ Change Log</button>
 </div>
 
-<!-- OVERVIEW -->
+<!-- ══ OVERVIEW ══ -->
 <div id="overview" class="page active">
   <div class="mandate">
     <div class="mandate-item"><span class="lbl">Company</span><span class="val">New Breed Revenue</span></div>
@@ -229,31 +255,36 @@
     <div class="mandate-item"><span class="lbl">Ecosystem</span><span class="val green">HubSpot #1 Partner</span></div>
   </div>
 
-  <p class="section-head">Stack Ranking — Click a card to view full profile</p>
+  <p class="section-head">Candidate Stack Ranking — Click any card to view full profile</p>
   <div class="cand-grid">
+
+    <!-- Henwood -->
     <div class="cand-card rank1" onclick="show('henwood')">
-      <div class="rank-pill">🥇 Rank 1 · Mala + Patrick Interview</div>
+      <div class="rank-pill">🥇 Rank 1 · Recommended for Panel</div>
+      <div class="intv2-card-banner banner-green">✅ Interview 2 complete — Patrick B.: "Really excited" · Panel scheduled</div>
       <div class="cand-name">Matt Henwood</div>
       <div class="cand-role">VP of Delivery · Sercante · Penfield, NY</div>
-      <div class="grade-row"><span class="grade-big">A-</span><span class="score-badge">88 / 100</span></div>
+      <div class="grade-row"><span class="grade-big">A-</span><span class="score-badge">91 / 100</span></div>
       <div class="dim-list">
         <div class="dim-row"><span class="dim-lbl">Scale & Growth</span><div class="bar-bg"><div class="bar-fill" style="width:93%"></div></div><span class="dim-num">93</span></div>
         <div class="dim-row"><span class="dim-lbl">Op. Rigor / P&L</span><div class="bar-bg"><div class="bar-fill" style="width:90%"></div></div><span class="dim-num">90</span></div>
-        <div class="dim-row"><span class="dim-lbl">Ecosystem Fit</span><div class="bar-bg"><div class="bar-fill" style="width:82%"></div></div><span class="dim-num">82</span></div>
-        <div class="dim-row"><span class="dim-lbl">AI Readiness</span><div class="bar-bg"><div class="bar-fill" style="width:60%"></div></div><span class="dim-num">60</span></div>
-        <div class="dim-row"><span class="dim-lbl">Team Leadership</span><div class="bar-bg"><div class="bar-fill" style="width:85%"></div></div><span class="dim-num">85</span></div>
-        <div class="dim-row"><span class="dim-lbl">Stage Fit</span><div class="bar-bg"><div class="bar-fill" style="width:92%"></div></div><span class="dim-num">92</span></div>
+        <div class="dim-row"><span class="dim-lbl">Ecosystem Fit</span><div class="bar-bg"><div class="bar-fill" style="width:85%"></div></div><span class="dim-num">85</span></div>
+        <div class="dim-row"><span class="dim-lbl">AI Readiness</span><div class="bar-bg"><div class="bar-fill" style="width:63%"></div></div><span class="dim-num">63</span></div>
+        <div class="dim-row"><span class="dim-lbl">Team Leadership</span><div class="bar-bg"><div class="bar-fill" style="width:88%"></div></div><span class="dim-num">88</span></div>
+        <div class="dim-row"><span class="dim-lbl">Stage Fit</span><div class="bar-bg"><div class="bar-fill" style="width:95%"></div></div><span class="dim-num">95</span></div>
       </div>
       <div class="tag-row">
-        <span class="tag ok">P&L Owned ✓</span><span class="tag ok">$16M→$45M done</span><span class="tag ok">M&A Integration ✓</span>
-        <span class="tag warn">Passive seeker</span><span class="tag warn">HubSpot ramp needed</span><span class="tag warn">AI: theory, not application</span>
+        <span class="tag ok">P&L Owned ✓</span><span class="tag ok">$16M→$45M done</span><span class="tag ok">CEO: "Really excited"</span>
+        <span class="tag warn">Passive seeker</span><span class="tag warn">AI application gap</span>
       </div>
     </div>
 
+    <!-- Scherder -->
     <div class="cand-card rank2" onclick="show('scherder')">
-      <div class="rank-pill">🥈 Rank 2 · Mala + Patrick Interview</div>
+      <div class="rank-pill">🥈 Rank 2 · Recommended for Panel</div>
+      <div class="intv2-card-banner banner-green">✅ Interview 2 complete — Mala: Advance · VP-level ready</div>
       <div class="cand-name">Patrick Scherder</div>
-      <div class="cand-role">VP Delivery · Atrium · Richmond, VA</div>
+      <div class="cand-role">Sr. Director, Delivery · Atrium · Richmond, VA</div>
       <div class="grade-row"><span class="grade-big">B+</span><span class="score-badge">79 / 100</span></div>
       <div class="dim-list">
         <div class="dim-row"><span class="dim-lbl">Scale & Growth</span><div class="bar-bg"><div class="bar-fill" style="width:75%"></div></div><span class="dim-num">75</span></div>
@@ -264,410 +295,94 @@
         <div class="dim-row"><span class="dim-lbl">Stage Fit</span><div class="bar-bg"><div class="bar-fill" style="width:82%"></div></div><span class="dim-num">82</span></div>
       </div>
       <div class="tag-row">
-        <span class="tag ok">Best AI Discipline</span><span class="tag ok">PwC + CRM Depth</span><span class="tag ok">Location Clear ✓</span>
-        <span class="tag warn">No solo P&L yet</span><span class="tag warn">Zero HubSpot exp.</span>
+        <span class="tag ok">Best AI Discipline</span><span class="tag ok">PwC Foundation ✓</span><span class="tag ok">Mala: Strong Culture ✓</span>
+        <span class="tag warn">VP-level today</span><span class="tag warn">Autonomy growth edge</span><span class="tag warn">Happy at Atrium</span>
       </div>
     </div>
 
-    <div class="cand-card rank3" onclick="show('andres')">
-      <div class="rank-pill">🥉 Rank 3 · Clarify Location First</div>
-      <div class="flag-banner">⚠️ Location flag — profile excludes DC. Listed DC on scorecard; says Maryland. Verify before advancing.</div>
+    <!-- Andrés -->
+    <div class="cand-card not-adv" onclick="show('andres')">
+      <div class="rank-pill">Not Recommended for Advancement</div>
       <div class="cand-name">Andrés Gluecksmann</div>
-      <div class="cand-role">Sr. Director, Services · Salesforce · DC/MD</div>
-      <div class="grade-row"><span class="grade-big">B-</span><span class="score-badge">71 / 100</span></div>
+      <div class="cand-role">Sr. Director, Services · Salesforce · DC/MD Area</div>
+      <div class="grade-row"><span class="grade-big">C-</span><span class="score-badge">55 / 100</span></div>
       <div class="dim-list">
-        <div class="dim-row"><span class="dim-lbl">Scale & Growth</span><div class="bar-bg"><div class="bar-fill" style="width:82%"></div></div><span class="dim-num">82</span></div>
-        <div class="dim-row"><span class="dim-lbl">Op. Rigor / P&L</span><div class="bar-bg"><div class="bar-fill" style="width:68%"></div></div><span class="dim-num">68</span></div>
-        <div class="dim-row"><span class="dim-lbl">Ecosystem Fit</span><div class="bar-bg"><div class="bar-fill" style="width:72%"></div></div><span class="dim-num">72</span></div>
-        <div class="dim-row"><span class="dim-lbl">AI Readiness</span><div class="bar-bg"><div class="bar-fill" style="width:83%"></div></div><span class="dim-num">83</span></div>
-        <div class="dim-row"><span class="dim-lbl">Team Leadership</span><div class="bar-bg"><div class="bar-fill" style="width:78%"></div></div><span class="dim-num">78</span></div>
-        <div class="dim-row"><span class="dim-lbl">Stage Fit</span><div class="bar-bg"><div class="bar-fill" style="width:62%"></div></div><span class="dim-num">62</span></div>
+        <div class="dim-row"><span class="dim-lbl">Scale & Growth</span><div class="bar-bg"><div class="bar-fill" style="width:60%"></div></div><span class="dim-num">60</span></div>
+        <div class="dim-row"><span class="dim-lbl">Op. Rigor / P&L</span><div class="bar-bg"><div class="bar-fill" style="width:40%"></div></div><span class="dim-num">40</span></div>
+        <div class="dim-row"><span class="dim-lbl">Ecosystem Fit</span><div class="bar-bg"><div class="bar-fill" style="width:45%"></div></div><span class="dim-num">45</span></div>
+        <div class="dim-row"><span class="dim-lbl">AI Readiness</span><div class="bar-bg"><div class="bar-fill" style="width:65%"></div></div><span class="dim-num">65</span></div>
+        <div class="dim-row"><span class="dim-lbl">Team Leadership</span><div class="bar-bg"><div class="bar-fill" style="width:80%"></div></div><span class="dim-num">80</span></div>
+        <div class="dim-row"><span class="dim-lbl">Stage Fit</span><div class="bar-bg"><div class="bar-fill" style="width:40%"></div></div><span class="dim-num">40</span></div>
       </div>
       <div class="tag-row">
-        <span class="tag risk">⚠️ DC Location Flag</span><span class="tag risk">SFDC = Disqualifier?</span>
-        <span class="tag ok">IP Innovation</span><span class="tag warn">Op. Rigor Diluted</span><span class="tag warn">Strategy > Operations</span>
+        <span class="tag ok">Culture: 4/5</span><span class="tag ok">Global Scale ✓</span><span class="tag ok">Innovation Mindset</span>
+        <span class="tag neutral">P&L not owned</span><span class="tag neutral">Op. Rigor: 2/5</span><span class="tag neutral">Large-org profile</span>
       </div>
     </div>
   </div>
 
-  <p class="section-head">Head-to-Head Comparison</p>
+  <!-- Scorecard Table -->
+  <p class="section-head">True Search Scorecard Comparison — With Interview 2 Score Changes</p>
   <div class="comp-table-wrap">
-    <table class="comp-table">
-      <thead>
-        <tr><th>Hiring Criteria</th><th>🥇 Matt Henwood</th><th>🥈 Patrick Scherder</th><th>🥉 Andrés Gluecksmann</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Scaled services org through revenue inflection</td><td><span class="yes">✓</span> $16M → $45M at 7Summits</td><td><span class="maybe">~</span> Influence, not P&L owner</td><td><span class="maybe">~</span> $1.2M → $14M (10+ yrs ago)</td></tr>
-        <tr><td>Proven P&L / margin ownership</td><td><span class="yes">✓</span> Zennify turnaround, util. 83%</td><td><span class="maybe">~</span> Contributed, not sole owner</td><td><span class="no">✗</span> Diluted at SFDC scale</td></tr>
-        <tr><td>HubSpot / RevOps ecosystem depth</td><td><span class="maybe">~</span> Sercante adjacent; SF primary</td><td><span class="no">✗</span> None — CRM adjacent only</td><td><span class="no">✗</span> None — bullish but unexperienced</td></tr>
-        <tr><td>Growth-stage consulting firm ($20–100M)</td><td><span class="yes">✓</span> Multiple examples</td><td><span class="yes">✓</span> Atrium is a direct match</td><td><span class="no">✗</span> Currently at Salesforce (software)</td></tr>
-        <tr><td>AI-enabled delivery models</td><td><span class="maybe">~</span> Ideas discussed; no implemented workflows confirmed — theory without application</td><td><span class="yes">✓</span> AI catalog, Andy product co-dev, weekly team tracking</td><td><span class="maybe">~</span> 2,000-member community; champion not operator</td></tr>
-        <tr><td>Location eligible</td><td><span class="yes">✓</span> Penfield, NY</td><td><span class="yes">✓</span> Richmond, VA</td><td><span class="maybe">⚠️</span> Listed DC — says Maryland; verify</td></tr>
-        <tr><td>M&A integration experience</td><td><span class="yes">✓</span> Appirio/Wipro + 7Summits/IBM</td><td><span class="maybe">~</span> Partner ecosystem knowledge</td><td><span class="yes">✓</span> Traction on Demand / SFDC</td></tr>
-        <tr><td>Not a global systems integrator</td><td><span class="maybe">~</span> Appirio borderline; boutique culture</td><td><span class="yes">✓</span> PwC → Tableau → Atrium</td><td><span class="maybe">~</span> Appirio + now SFDC (large org)</td></tr>
-        <tr><td>Motivation / readiness to move</td><td><span class="maybe">~</span> Passive — needs strong pull</td><td><span class="yes">✓</span> Actively targeting this next step</td><td><span class="yes">✓</span> Exiting SFDC by May 1</td></tr>
-        <tr><td>Recommended action</td><td><strong>Mala + Patrick Interview</strong></td><td><strong>Mala + Patrick Interview</strong></td><td><strong>Clarify location, then decide</strong></td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<!-- HENWOOD -->
-<div id="henwood" class="page">
-  <div class="verdict-box rank1">
-    <h4>Overall Assessment — Grade A- · Score 88/100 · Rank #1</h4>
-    <p>Matt is the strongest candidate against New Breed's specific mandate. His 7Summits chapter — scaling from $16M to $45M as EVP of Service Delivery before a successful IBM acquisition — is a near-perfect analogue to the $14M → $20M+ target. His Zennify turnaround proves he can manage under PE pressure, right-size an org, and drive utilization discipline. He also brings two landmark M&A integration stories, mapping directly to New Breed's stated acquisition ambitions. AI is a gap — he spoke to ideas but has not yet demonstrated implemented delivery workflows.</p>
-  </div>
-  <div class="detail-hero">
-    <div class="avatar" style="background:var(--nb-orange);">MH</div>
-    <div class="detail-hero-info">
-      <h2>Matt Henwood</h2>
-      <div class="role">VP of Delivery · Sercante · Penfield, NY · (585) 820-6164 · mjhenwood@gmail.com</div>
-      <div class="hero-tags">
-        <span class="hero-tag rank">Rank #1</span>
-        <span class="hero-tag ok">Grade: A-</span>
-        <span class="hero-tag ok">Score: 88/100</span>
-        <span class="hero-tag ok">Location: Penfield, NY ✓</span>
-        <span class="hero-tag warn">Passive seeker</span>
-        <span class="hero-tag warn">AI: theory only</span>
-      </div>
-      <div class="link-row">
-        <a href="https://www.linkedin.com/in/matthenwood" target="_blank" class="hero-link li">🔗 LinkedIn Profile</a>
-        <a href="https://fathom.video/share/-FN5skMmV1EuiyecXtw5xw-Q-nMF6iJ8" target="_blank" class="hero-link rec">▶ Interview Recording</a>
-        <a href="https://drive.google.com/file/d/1Ew0Vgb0zc5yTZ77a4xvT-COtK1uzZmQF/view?usp=drive_link" target="_blank" class="hero-link doc">📄 Assessment File</a>
-      </div>
-    </div>
-  </div>
-  <div class="detail-grid">
-    <div class="detail-box">
-      <h4>Career Timeline</h4>
-      <div class="timeline">
-        <div class="tl-item"><div class="tl-dot" style="background:var(--nb-orange)"></div><div class="tl-content"><div class="tl-company">Sercante (Sep 2024–Present)</div><div class="tl-role">VP of Delivery — 75-person org. Building AI solutions, on track for $25M revenue.</div></div></div>
-        <div class="tl-item"><div class="tl-dot" style="background:var(--nb-orange)"></div><div class="tl-content"><div class="tl-company">Zennify (Apr 2023–Sep 2024)</div><div class="tl-role">Chief Delivery Officer — PE turnaround. Right-sized 113→85, utilization to 83%, achieved breakeven.</div></div></div>
-        <div class="tl-item"><div class="tl-dot" style="background:var(--nb-orange)"></div><div class="tl-content"><div class="tl-company">RevTech360 (Feb 2022–Apr 2023)</div><div class="tl-role">Chief Delivery Officer</div></div></div>
-        <div class="tl-item"><div class="tl-dot" style="background:var(--nb-orange)"></div><div class="tl-content"><div class="tl-company">7Summits / IBM (May 2017–Aug 2021)</div><div class="tl-role">EVP Service Delivery — Scaled $16M→$45M, tripled delivery org, key exec in IBM acquisition.</div></div></div>
-        <div class="tl-item"><div class="tl-dot" style="background:var(--gray)"></div><div class="tl-content"><div class="tl-company">Appirio / Wipro (Aug 2009–Apr 2017)</div><div class="tl-role">VP Salesforce Global Services — Scaled 125 to 1,400 employees ($20M→$225M). Built India delivery center.</div></div></div>
-      </div>
-    </div>
-    <div class="detail-box">
-      <h4>Key Differentiators</h4>
-      <ul>
-        <li>Only candidate who held EVP Service Delivery at a boutique SI that scaled $16M→$45M — direct mandate match</li>
-        <li>PE-backed turnaround success: moved Zennify to breakeven, raised utilization to 83%, reduced troubled projects 20%</li>
-        <li>Two major acquisition integrations: Appirio/Wipro ($500M) + 7Summits/IBM — knows what a Tier-1 exit P&L looks like</li>
-        <li>Built offshore/nearshore leverage model — directly relevant to New Breed's margin goals</li>
-        <li>MS Management (Nazareth University) — strong academic foundation</li>
-      </ul>
-    </div>
-    <div class="detail-box">
-      <h4>Strengths vs. New Breed Profile</h4>
-      <ul>
-        <li>Scale & Growth track record is the strongest in the pool — maps directly to the $14M→$20M mandate</li>
-        <li>P&L ownership proven and battle-tested under PE pressure</li>
-        <li>Delivery playbooks and repeatable frameworks built from scratch at multiple firms</li>
-        <li>M&A integration expertise maps to New Breed's stated acquisition roadmap</li>
-        <li>Knows the boutique SI growth journey from both sides (SI operator + Salesforce partner management)</li>
-      </ul>
-    </div>
-    <div class="detail-box">
-      <h4>Risks & Watch Items</h4>
-      <ul>
-        <li>Passive seeker — not actively hunting; needs compelling package and growth narrative to move</li>
-        <li>AI gap: discussed ideas and concepts but no implemented AI delivery workflows confirmed in interview</li>
-        <li>Rapid role transitions 2021–2024 (RevTech360, GoEnvoy, Zennify) — probe longevity intent</li>
-        <li>No HubSpot ecosystem experience — meaningful ramp period required</li>
-        <li>Some may flag Appirio as GSI-adjacent (borderline disqualifier) — culture was boutique though</li>
-      </ul>
-    </div>
-  </div>
-  <div class="detail-box" style="margin-bottom:18px;">
-    <h4>Panel Interview Focus Areas</h4>
-    <ul>
-      <li>What would it take to leave Sercante — comp expectations, growth story, equity sensitivity</li>
-      <li>AI specifically: what has he actually implemented vs. what is aspirational — get concrete examples</li>
-      <li>How quickly can he get fluent in the HubSpot ecosystem and what's his ramp plan</li>
-      <li>Walk through his Day 1–90 plan: what does he prioritize first at New Breed</li>
-      <li>Probe the 2021–2024 rapid transitions — what's the story, what did he learn about fit</li>
-      <li>Matt approached the first interview with an executive consultant lens — presenting observations and frameworks rather than selling himself into the role. The next conversation should pull him out of that mode and into specific, personal examples tied directly to New Breed's hiring criteria: scaling a services org through a comparable revenue inflection, owning a P&L under pressure, building delivery structure from scratch, and driving AI adoption on the ground. Push for "I did this" not "here is how one would approach this."</li>
-      <li>Understand how he likes to collaborate with his team day-to-day — how does he run cadences, give feedback, stay close to delivery without micromanaging, and develop the leaders beneath him? Look for concrete examples of how his teams have described working with him, not just his philosophy in the abstract.</li>
-      <li>How does he motivate and performance manage a team — ask for specific examples of how he has handled both high performers and underperformers, and what accountability structures he has put in place.</li>
-      <li>What is his management style and how does he partner with other functional leaders — sales, finance, people ops? Where has that cross-functional collaboration worked well and where has it created friction?</li>
-      <li>What does his current day-to-day actually look like — the good, the challenging, and what he would change? This is a strong signal for what he values, where he spends energy, and whether his current rhythm maps to what New Breed needs from this seat.</li>
-    </ul>
-  </div>
-</div>
-
-<!-- SCHERDER -->
-<div id="scherder" class="page">
-  <div class="verdict-box rank2">
-    <h4>Overall Assessment — Grade B+ · Score 79/100 · Rank #2</h4>
-    <p>Patrick is methodical, articulate, and intellectually sharp. His engagement director model — a 50/50 pre-sales/delivery hybrid — is exactly the structural innovation New Breed needs as it evolves from retainer to project-based work. His AI approach is the most rigorous of the three: a systematic catalog mapped to methodology with weekly usage tracking and time savings documentation. The critical gap is P&L ownership — he is the #2 operator at Atrium and has not yet sat in the top seat. That is addressable with the right mandate and support structure.</p>
-  </div>
-  <div class="detail-hero">
-    <div class="avatar" style="background:var(--nb-green-dark);">PS</div>
-    <div class="detail-hero-info">
-      <h2>Patrick Scherder</h2>
-      <div class="role">VP Delivery / Engagement Director Lead · Atrium · Richmond, VA</div>
-      <div class="hero-tags">
-        <span class="hero-tag rank" style="background:var(--nb-green-dark);">Rank #2</span>
-        <span class="hero-tag ok">Grade: B+</span>
-        <span class="hero-tag ok">Score: 79/100</span>
-        <span class="hero-tag ok">Location: Richmond, VA ✓</span>
-        <span class="hero-tag warn">No solo P&L yet</span>
-      </div>
-      <div class="link-row">
-        <a href="https://fathom.video/share/R97Gou8USYX2ZpMXq4zxXinJAfjEGX1w" target="_blank" class="hero-link rec">▶ Interview Recording</a>
-        <a href="https://drive.google.com/file/d/15WtVSg2qOjK5SCmjZXF1MVaoV28DQDkB/view?usp=drive_link" target="_blank" class="hero-link doc">📄 Assessment File</a>
-      </div>
-    </div>
-  </div>
-  <div class="detail-grid">
-    <div class="detail-box">
-      <h4>Career Timeline</h4>
-      <div class="timeline">
-        <div class="tl-item"><div class="tl-dot" style="background:var(--nb-green)"></div><div class="tl-content"><div class="tl-company">Atrium (3 years, current)</div><div class="tl-role">VP Delivery — Built Tableau practice from zero, leads delivery + pre-sales, created engagement director model, built AI delivery catalog with weekly team tracking.</div></div></div>
-        <div class="tl-item"><div class="tl-dot" style="background:var(--nb-green)"></div><div class="tl-content"><div class="tl-company">Salesforce / Tableau (~5 years)</div><div class="tl-role">Services Leader — Pre and post-acquisition. Managed partner relationships and solution offerings from the ISV side.</div></div></div>
-        <div class="tl-item"><div class="tl-dot" style="background:var(--gray)"></div><div class="tl-content"><div class="tl-company">PwC (10 years)</div><div class="tl-role">Built first data & analytics delivery services org within PwC's transactions/deals practice. Foundation in management consulting.</div></div></div>
-      </div>
-    </div>
-    <div class="detail-box">
-      <h4>Key Differentiators</h4>
-      <ul>
-        <li>Built Atrium's Engagement Director model — 50/50 pre-sales/delivery hybrid that directly addresses New Breed's sales-delivery gap</li>
-        <li>Most rigorous AI delivery discipline: weekly AI usage catalog, time-savings tracking, methodology integration</li>
-        <li>Co-develops "Andy" AI consultant product with Atrium's product team</li>
-        <li>Achieved 15-point gross margin improvement on Atrium's customer success team</li>
-        <li>10 years at PwC — rare blend of management consulting rigor + boutique SI operator</li>
-      </ul>
-    </div>
-    <div class="detail-box">
-      <h4>Strengths vs. New Breed Profile</h4>
-      <ul>
-        <li>AI delivery discipline most immediately applicable to New Breed's AI-first mission</li>
-        <li>Engagement director model maps directly to Taylor's stated pain point on sales-delivery integration</li>
-        <li>Highly motivated — explicitly stated CCO role is his next career move</li>
-        <li>Strong cultural chemistry in interview; authentic, self-aware, strong EQ</li>
-        <li>Atrium is a direct stage-match to New Breed's profile (growth-stage boutique CRM SI)</li>
-      </ul>
-    </div>
-    <div class="detail-box">
-      <h4>Risks & Watch Items</h4>
-      <ul>
-        <li>Has not held full P&L ownership as top executive — significant step up in accountability</li>
-        <li>Zero HubSpot ecosystem experience — CRM-adjacent but not ecosystem-native</li>
-        <li>Currently happy at Atrium — comp and growth narrative must be compelling enough to move</li>
-        <li>No equity at signing may be a friction point — worth early alignment</li>
-        <li>PwC background can trend strategic vs. hands-on — confirm operational instinct in panel</li>
-      </ul>
-    </div>
-  </div>
-  <div class="detail-box" style="margin-bottom:18px;">
-    <h4>Panel Interview Focus Areas</h4>
-    <ul>
-      <li>P&L ownership readiness — how does he move from influencer of margins to sole accountable owner</li>
-      <li>HubSpot ramp plan — how quickly does he get up to speed and what's his approach</li>
-      <li>Apply the engagement director model to New Breed's current structure — what changes on Day 1</li>
-      <li>How does he think about $14M→$20M growth journey — where does he invest first</li>
-      <li>Comp expectations and sensitivity to no-equity-at-signing structure</li>
-      <li>Provide more clarity on how he would manage a P&L or similar financial responsibility — specifically how he sets targets, tracks performance, and cascades accountability down to team leads and individual contributors.</li>
-      <li>New Breed needs to gauge the level at which he would enter the organization — is he ready to step in as the sole owner of services from Day 1, or does he need a transition period with guardrails? Curate questions that pressure-test his decision-making independence, how quickly he acts without full information, and how he has operated when there was no one above him to validate the call.</li>
-      <li>How does he motivate and performance manage a team — ask for specific examples of how he has handled both high performers and underperformers, and what accountability structures he has put in place.</li>
-      <li>What is his management style and how does he partner with other functional leaders — sales, finance, people ops? Where has that cross-functional collaboration worked well and where has it created friction?</li>
-      <li>What does his current day-to-day actually look like — the good, the challenging, and what he would change? This is a strong signal for what he values, where he spends energy, and whether his current rhythm maps to what New Breed needs from this seat.</li>
-    </ul>
-  </div>
-</div>
-
-<!-- ANDRES -->
-<div id="andres" class="page">
-  <div class="verdict-box rank3">
-    <h4>Overall Assessment — Grade B- · Score 71/100 · Rank #3 (Conditional)</h4>
-    <p>Andrés brings the most innovative and product-forward mindset of the three, and his pedigree (Appirio, Traction on Demand, Salesforce) is impressive. However, his current role at a large software company positions him furthest from the hands-on boutique operator New Breed needs. True Search scores on operational rigor (3/5) and implementation services (3.5/5) reflect concern that his operating mode has drifted toward strategy and oversight. The DC location eligibility question must be resolved immediately before further process investment.</p>
-  </div>
-  <div class="flag-banner" style="margin-bottom:16px; padding:12px 16px; border-radius:10px; font-size:12px;">
-    ⚠️ <strong>Critical Flag:</strong> The service leader profile explicitly excludes candidates in Washington DC. Andrés is listed as "Washington, District of Columbia" on his True Search scorecard but states he is "in Maryland now." This must be legally verified — if his employer of record or tax residence is DC, this is a hard hiring disqualifier. Resolve before advancing.
-  </div>
-  <div class="detail-hero">
-    <div class="avatar" style="background:var(--amber);">AG</div>
-    <div class="detail-hero-info">
-      <h2>Andrés Gluecksmann</h2>
-      <div class="role">Senior Director, Services · Salesforce (via Traction on Demand) · Maryland / DC Area · andresglue@gmail.com</div>
-      <div class="hero-tags">
-        <span class="hero-tag rank" style="background:var(--amber);">Rank #3</span>
-        <span class="hero-tag ok">Grade: B-</span>
-        <span class="hero-tag ok">Score: 71/100</span>
-        <span class="hero-tag risk">⚠️ Verify DC vs. MD</span>
-        <span class="hero-tag risk">Exit by May 1, 2026</span>
-      </div>
-      <div class="link-row">
-        <a href="https://www.linkedin.com/in/agluecksmann" target="_blank" class="hero-link li">🔗 LinkedIn Profile</a>
-        <a href="https://fathom.video/share/zxccjHysxwWjt_afa-cv-H5Meva9iocG" target="_blank" class="hero-link rec">▶ Interview Recording</a>
-        <a href="https://drive.google.com/file/d/1uqfDw6MqXD1n8Y_VGYuWfHWifh6Ur6LX/view?usp=sharing" target="_blank" class="hero-link doc">📄 Assessment File</a>
-      </div>
-    </div>
-  </div>
-  <div class="detail-grid">
-    <div class="detail-box">
-      <h4>Career Timeline</h4>
-      <div class="timeline">
-        <div class="tl-item"><div class="tl-dot" style="background:var(--amber)"></div><div class="tl-content"><div class="tl-company">Salesforce (May 2022–Present)</div><div class="tl-role">Sr. Director, Services — via Traction on Demand acquisition. Manages 105 personnel. Led $50M revenue recovery. Founded 2,000-member AI upskilling community.</div></div></div>
-        <div class="tl-item"><div class="tl-dot" style="background:var(--amber)"></div><div class="tl-content"><div class="tl-company">Traction on Demand (Sep 2019–May 2022)</div><div class="tl-role">VP Innovation — Built "Enable" app (replaced Jira for 1,700 users). Drove 1,300% jump in IP-led revenue. Helped drive company to SFDC acquisition.</div></div></div>
-        <div class="tl-item"><div class="tl-dot" style="background:var(--gray)"></div><div class="tl-content"><div class="tl-company">Appirio / Wipro (Oct 2011–Sep 2019)</div><div class="tl-role">VP Services — 8 years, 300-person global team, $180M book of business. Scaled CDM team $1.2M→$14M in 24 months.</div></div></div>
-        <div class="tl-item"><div class="tl-dot" style="background:var(--gray)"></div><div class="tl-content"><div class="tl-company">Astadia (Aug 2006–Sep 2011)</div><div class="tl-role">Consulting Director — 5 years in Salesforce consulting.</div></div></div>
-      </div>
-    </div>
-    <div class="detail-box">
-      <h4>Key Differentiators</h4>
-      <ul>
-        <li>Most innovative and product-minded — IP creation DNA (The Estimator became commercial product; Enable replaced Jira)</li>
-        <li>Founded 2,000-member AI upskilling community at Salesforce — exceptional change management at scale</li>
-        <li>Led $50M revenue recovery / leakage-bridging motion at Salesforce</li>
-        <li>Services Accelerators: AI recommendation tools + reusable assets that increased margin and decreased time-to-value</li>
-        <li>Specifically targeting $15M–$20M org with ambition to scale to $50M — strong motivation alignment</li>
-      </ul>
-    </div>
-    <div class="detail-box">
-      <h4>Strengths vs. New Breed Profile</h4>
-      <ul>
-        <li>Product-led services innovation mindset — could introduce IP-driven revenue lines</li>
-        <li>CDM scaling story ($1.2M→$14M) parallels New Breed's growth mandate</li>
-        <li>Highly motivated and available immediately (exit by May 1)</li>
-        <li>AI community building at 2,000-member scale = exceptional change management proof</li>
-        <li>Cross-ecosystem fluidity — bullish on HubSpot's upmarket trajectory</li>
-      </ul>
-    </div>
-    <div class="detail-box">
-      <h4>Risks & Watch Items</h4>
-      <ul>
-        <li>Location: DC flag must be resolved — potential hard disqualifier under employment policy</li>
-        <li>Salesforce is a profile disqualifier category (software company, not consulting firm)</li>
-        <li>True Search scores operational rigor 3/5 — lower than both other candidates</li>
-        <li>AI role described as "supporting and promoting" not directing or owning operationally</li>
-        <li>Most recent boutique consulting chapter was 2019 — 7 years of large-org drift since then</li>
-      </ul>
-    </div>
-  </div>
-  <div class="detail-box" style="margin-bottom:18px;">
-    <h4>Clarification Questions (Before / During Next Interview)</h4>
-    <ul>
-      <li>Exact legal residence and employer-of-record state — DC vs. Maryland, and whether New Breed can legally employ him</li>
-      <li>Operating mode preference — is he genuinely seeking a hands-on operator role or a strategic executive role?</li>
-      <li>How does he plan to re-engage with boutique SI delivery culture after 4+ years at SFDC?</li>
-      <li>Walk through a specific example of owning a P&L directly — not influencing or supporting one</li>
-      <li>What does his ramp plan look like to get fluent in the HubSpot ecosystem?</li>
-      <li>Provide more specific examples of businesses and teams he has scaled at a similar growth stage to New Breed — comparable revenue range, team size, and consulting model.</li>
-      <li>In previous roles, how did he operate at the group level — specifically around escalations, executive sponsorship, and hands-on delivery support — given that New Breed's team size requires that level of direct involvement?</li>
-      <li>As a follow-up: at this stage of his career, does he genuinely want that level of "on the ground" ownership, or is he looking for a more removed strategic seat?</li>
-      <li>How does he motivate and performance manage a team — ask for specific examples of how he has handled both high performers and underperformers, and what accountability structures he has put in place.</li>
-      <li>What is his management style and how does he partner with other functional leaders — sales, finance, people ops? Where has that cross-functional collaboration worked well and where has it created friction?</li>
-      <li>What does his current day-to-day actually look like — the good, the challenging, and what he would change? This is a strong signal for what he values, where he spends energy, and whether his current rhythm maps to what New Breed needs from this seat.</li>
-    </ul>
-  </div>
-</div>
-
-<!-- NEXT STEPS -->
-<div id="nextsteps" class="page">
-  <div class="mandate" style="margin-bottom:24px;">
-    <div class="mandate-item"><span class="lbl">Immediate Next Step</span><span class="val orange">Mala + Patrick Interviews</span></div>
-    <div class="mandate-item"><span class="lbl">Then</span><span class="val orange">Consider Panel</span></div>
-    <div class="mandate-item"><span class="lbl">Reference Checks</span><span class="val">Final Stages Only</span></div>
-    <div class="mandate-item"><span class="lbl">Search Partner</span><span class="val green">True Search</span></div>
-  </div>
-
-  <p class="section-head">Recommended Actions by Candidate</p>
-  <div class="next-grid">
-    <div class="next-card">
-      <div class="nc-header"><div class="nc-dot" style="background:var(--nb-orange)"></div><h4>Matt Henwood</h4></div>
-      <div class="status advance">✓ Next: Mala + Patrick Interview</div>
-      <ol>
-        <li>Schedule interview with Mala and Patrick — complete before advancing to panel</li>
-        <li>True Search to re-engage with strong comp story and growth narrative — he is a passive seeker</li>
-        <li>Interview focus: $14M→$20M plan, Day 1–90 priorities, long-term stability intent</li>
-        <li>Dig into AI specifically — what has he implemented vs. what is aspirational, get concrete examples</li>
-        <li>Prepare a thoughtful comp discussion — may expect upside participation given M&A background</li>
-      </ol>
-    </div>
-    <div class="next-card">
-      <div class="nc-header"><div class="nc-dot" style="background:var(--nb-green)"></div><h4>Patrick Scherder</h4></div>
-      <div class="status advance">✓ Next: Mala + Patrick Interview</div>
-      <ol>
-        <li>Schedule interview with Mala and Patrick — complete before advancing to panel</li>
-        <li>He is actively seeking and motivated; don't let this cool</li>
-        <li>Interview focus: P&L accountability probing, HubSpot ecosystem ramp, cultural fit</li>
-        <li>Ask him to bring his engagement director model framework — have the team evaluate it</li>
-        <li>Clarify comp expectations and address no-equity-at-signing early to prevent late-stage dropout</li>
-      </ol>
-    </div>
-    <div class="next-card">
-      <div class="nc-header"><div class="nc-dot" style="background:var(--amber)"></div><h4>Andrés Gluecksmann</h4></div>
-      <div class="status flag">⚠️ Clarify Location First</div>
-      <ol>
-        <li>True Search to confirm exact legal state of residence immediately — DC vs. Maryland</li>
-        <li>If DC: pause process and communicate clearly — hard disqualifier per employment policy</li>
-        <li>If Maryland confirmed: schedule interview with Mala and Patrick before any further steps</li>
-        <li>Ask True Search to re-score operational rigor with more probing questions</li>
-        <li>If advanced: interview must stress-test hands-on delivery execution, not just innovation vision</li>
-      </ol>
-    </div>
-  </div>
-
-  <p class="section-head">Panel Interview Guide</p>
-  <div class="criteria-table">
     <table>
       <thead>
-        <tr><th>Panel Member</th><th>Focus Area</th><th>Key Questions to Ask</th></tr>
+        <tr>
+          <th>Dimension</th>
+          <th>Matt Henwood <span style="font-size:9px;color:#6EE7B7;">Interview 2 complete ✓ Apr 1</span></th>
+          <th>Patrick Scherder <span style="font-size:9px;color:#6EE7B7;">Interview 2 complete ✓ Apr 2</span></th>
+          <th>Andrés Gluecksmann <span style="font-size:9px;color:rgba(255,255,255,.4);">Updated post-Interview 2</span></th>
+        </tr>
       </thead>
       <tbody>
         <tr>
-          <td><strong>Taylor Forest</strong><br><span style="color:var(--text-muted);font-weight:400;font-size:11px;">COO/CSO</span></td>
-          <td>Vision, services growth plan, operating model</td>
-          <td>
-            <div class="q-item">Walk us through exactly how you would approach the $14M→$20M growth mandate in Year 1.</div>
-            <div class="q-item">How do you think about organic growth vs. M&A to hit the target?</div>
-            <div class="q-item">What does your first 90 days look like — where do you start?</div>
-          </td>
+          <td>Scale, Growth &amp; Track Record</td>
+          <td><div class="delta-wrap"><div class="delta-now s-high">4/5 <span class="delta-badge delta-ok">✓ Validated</span></div><div class="intv2-note">Patrick B. explicitly confirmed: "what I really like about your experience is you like that growth stage still"</div></div></td>
+          <td><div class="delta-wrap"><div class="delta-now s-mid">3.5/5 <span class="delta-badge delta-ok">✓ Validated</span></div><div class="intv2-note">Mala: Growth instincts and trajectory confirmed in Interview 2</div></div></td>
+          <td><div class="delta-wrap"><div class="delta-prev">3.5/5 pre-Interview 2</div><div class="delta-now s-mid">3/5 <span class="delta-badge delta-down">↓ Revised</span></div><div class="intv2-note">Patrick B.: Influenced outcomes, not direct accountability for a $15M–$50M org</div></div></td>
         </tr>
         <tr>
-          <td><strong>Patrick Biddiscombe</strong><br><span style="color:var(--text-muted);font-weight:400;font-size:11px;">CEO</span></td>
-          <td>Executive presence, C-suite collaboration, strategic alignment</td>
-          <td>
-            <div class="q-item">How have you partnered with a CEO to align services growth with company strategy?</div>
-            <div class="q-item">Tell me about a time you pushed back on leadership with data and how it went.</div>
-            <div class="q-item">What's your philosophy on building vs. buying capabilities to scale?</div>
-          </td>
+          <td>Operational Rigor / PE</td>
+          <td><div class="delta-wrap"><div class="delta-now s-high">4/5 <span class="delta-badge delta-ok">✓ Validated</span></div><div class="intv2-note">P&L discipline, utilization methodology, and turnaround track record confirmed</div></div></td>
+          <td><div class="delta-wrap"><div class="delta-now s-high">4/5 <span class="delta-badge delta-watch">⚠ Monitor</span></div><div class="intv2-note">Mala: P&L ownership confirmed; accountability rigor depth to be probed in panel</div></div></td>
+          <td><div class="delta-wrap"><div class="delta-prev">3/5 pre-Interview 2</div><div class="delta-now s-low">2/5 <span class="delta-badge delta-down2">↓↓ Significant revision</span></div><div class="intv2-note">Patrick B.: No ownership of margin improvement, utilization control, or EBITDA across either interview</div></div></td>
         </tr>
         <tr>
-          <td><strong>Patrick Biddiscombe</strong><br><span style="color:var(--text-muted);font-weight:400;font-size:11px;">CEO — Sales Alignment</span></td>
-          <td>Sales-services alignment, pre-sales motion, expansion revenue</td>
-          <td>
-            <div class="q-item">How have you structured the relationship between sales and delivery to reduce friction?</div>
-            <div class="q-item">Walk through how you think about expansion and retention as a services motion.</div>
-            <div class="q-item">What metrics do you use to measure a healthy sales-to-delivery handoff?</div>
-          </td>
+          <td>Implementation / Services</td>
+          <td><div class="delta-wrap"><div class="delta-now s-high">5/5 <span class="delta-badge delta-ok">✓ Validated</span></div><div class="intv2-note">Deep CRM delivery expertise; methodology-building and onboarding program development confirmed</div></div></td>
+          <td><div class="delta-wrap"><div class="delta-now s-mid">3.5/5 <span class="delta-badge delta-ok">✓ Validated</span></div><div class="intv2-note">Mala: Concrete delivery restructuring examples; "reimagining" approach substantiated</div></div></td>
+          <td><div class="delta-wrap"><div class="delta-prev">3.5/5 pre-Interview 2</div><div class="delta-now s-mid">3/5 <span class="delta-badge delta-down">↓ Revised</span></div><div class="intv2-note">Patrick B.: Deep exposure; lacks recent ownership of delivery model design at boutique SI scale</div></div></td>
         </tr>
         <tr>
-          <td><strong>Mala Rugg</strong><br><span style="color:var(--text-muted);font-weight:400;font-size:11px;">VP People</span></td>
-          <td>Culture, team leadership, coaching, performance management</td>
-          <td>
-            <div class="q-item">Describe a difficult people decision you had to make — what did you do and learn?</div>
-            <div class="q-item">How do you build a high-performance culture while scaling quickly?</div>
-            <div class="q-item">What does your approach to performance management look like in practice?</div>
-          </td>
+          <td>Global Experience</td>
+          <td><div class="delta-wrap"><div class="delta-now s-mid">3.5/5 <span class="delta-badge delta-ok">✓ Validated</span></div><div class="intv2-note">Global delivery leadership at Appirio, 7Summits, Sercante confirmed</div></div></td>
+          <td><div class="delta-wrap"><div class="delta-now s-mid">3/5 <span class="delta-badge delta-ok">✓ Validated</span></div><div class="intv2-note">Mala: 80-person org across US, India, LATAM confirmed</div></div></td>
+          <td><div class="delta-wrap"><div class="delta-now s-high">4/5 <span class="delta-badge delta-hold">— No change</span></div><div class="intv2-note">100–300+ person global teams; strongest scoring dimension</div></div></td>
         </tr>
         <tr>
-          <td><strong>Dana Biddiscombe</strong><br><span style="color:var(--text-muted);font-weight:400;font-size:11px;">CFO</span></td>
-          <td>P&L ownership, margin discipline, financial accountability</td>
-          <td>
-            <div class="q-item">Walk me through a P&L you have owned — what were the key levers you managed?</div>
-            <div class="q-item">How do you balance investing in team growth vs. protecting EBITDA margins?</div>
-            <div class="q-item">What utilization model have you operated and what's your target for a 55-person org?</div>
-          </td>
+          <td>Culture Fit</td>
+          <td><div class="delta-wrap"><div class="delta-now s-high">4.5/5 <span class="delta-badge delta-up">↑ Strengthened</span></div><div class="intv2-note">Patrick B.: "I got really excited" — strong CEO chemistry; mutual connections (David Williams/Merkle, Craig Dempster); growth-stage alignment explicit</div></div></td>
+          <td><div class="delta-wrap"><div class="delta-now s-high">4/5 <span class="delta-badge delta-ok">✓ Strengthened</span></div><div class="intv2-note">Mala: Shared PwC background; player-coach instincts strongly affirmed</div></div></td>
+          <td><div class="delta-wrap"><div class="delta-now s-high">4/5 <span class="delta-badge delta-hold">— No change</span></div><div class="intv2-note">Strong EQ and leadership presence; culture is not the differentiating factor for this operator role</div></div></td>
+        </tr>
+        <tr style="background:var(--gray-light);">
+          <td style="font-weight:700;color:var(--nb-navy);">Overall</td>
+          <td><div class="delta-wrap"><div class="delta-prev">88 / 100 · A- pre-Interview 2</div><div class="delta-now s-high" style="font-size:15px;">91 / 100 · A-</div><span class="delta-badge delta-up" style="display:inline-block;margin-top:5px;">↑ +3 pts · Panel confirmed</span><div class="intv2-note">CEO enthusiasm, stage fit confirmed, ecosystem concern eased; panel scheduled</div></div></td>
+          <td><div class="delta-wrap"><div class="delta-now s-mid" style="font-size:15px;">79 / 100 · B+</div><span class="delta-badge delta-ok" style="display:inline-block;margin-top:5px;">Recommended for Panel</span><div class="intv2-note">Mala Interview 2: scores validated; watch items on autonomy and CRM gap noted for panel</div></div></td>
+          <td><div class="delta-wrap"><div class="delta-prev">71 / 100 · B- pre-Interview 2</div><div class="delta-now s-low" style="font-size:15px;">55 / 100 · C-</div><span class="delta-badge delta-down2" style="display:inline-block;margin-top:5px;">↓↓ −16 pts · Not Recommended</span><div class="intv2-note">Op. Rigor and Implementation both revised down; core operator requirements not confirmed</div></div></td>
         </tr>
       </tbody>
     </table>
+    <div class="comp-legend">
+      <span><span class="delta-badge delta-hold">— No change</span> Unchanged post-Interview 2</span>
+      <span><span class="delta-badge delta-ok">✓ Validated</span> Confirmed or strengthened</span>
+      <span><span class="delta-badge delta-up">↑ Strengthened</span> Score increased post-Interview 2</span>
+      <span><span class="delta-badge delta-watch">⚠ Monitor</span> Score held; flagged for panel</span>
+      <span><span class="delta-badge delta-down">↓ Revised</span> Lowered based on Interview 2</span>
+      <span><span class="delta-badge delta-down2">↓↓ Significant</span> Core gap confirmed</span>
+    </div>
   </div>
 
-  <p class="section-head">Success Profile — What Good Looks Like in 18–24 Months</p>
+  <p class="section-head">Success Profile — What Good Looks Like at 18–24 Months</p>
   <div class="two-col">
     <div class="detail-box"><h4>Delivery & Operations</h4><ul>
       <li>Services margins improved toward and above 22% EBITDA</li>
@@ -677,19 +392,408 @@
     </ul></div>
     <div class="detail-box"><h4>Growth & Scale</h4><ul>
       <li>Revenue trajectory clearly on path from $14M toward $20M+</li>
-      <li>Enterprise consulting capabilities scaled</li>
-      <li>AI-enabled delivery workflows introduced and adopted across delivery team</li>
+      <li>Enterprise consulting capabilities built and scaled</li>
+      <li>AI-enabled delivery workflows introduced and adopted across the team</li>
       <li>M&A acquisition integration supported where applicable</li>
     </ul></div>
   </div>
 </div>
 
+<!-- ══ MATT HENWOOD ══ -->
+<div id="henwood" class="page">
+  <div class="verdict-box rank1">
+    <h4>Overall Assessment — Grade A- · Score 91/100 · Rank #1 · Panel Confirmed · Updated April 3, 2026</h4>
+    <p>Matt remains the strongest operator in the pool. Interview 2 (April 1, with Patrick Biddiscombe and Mala Rugg) was highly positive — Patrick B. closed with "I think everything you said, I got really excited" and Mala immediately confirmed the panel as next step. Patrick B. explicitly validated Matt's growth-stage DNA and provided rich context on New Breed's HubSpot position and AI infrastructure. Matt responded with strong engagement, disclosed Sercante does HubSpot work (easing ecosystem concern), and showed honest AI perspective (Agentforce at Sercante hasn't scaled). Score moves 88→91 reflecting CEO enthusiasm, confirmed stage fit, improved culture/ecosystem reads, and panel being locked in.</p>
+  </div>
+  <div class="detail-hero">
+    <div class="avatar" style="background:var(--nb-orange);">MH</div>
+    <div class="detail-hero-info">
+      <h2>Matt Henwood</h2>
+      <div class="role">VP of Delivery · Sercante · Penfield, NY</div>
+      <div class="contact-row">
+        <span>✉ <a href="mailto:mjhenwood@gmail.com" style="color:var(--blue);">mjhenwood@gmail.com</a></span>
+        <span>📞 (585) 820-6164</span>
+      </div>
+      <div class="hero-tags">
+        <span class="hero-tag rank1">Rank #1</span>
+        <span class="hero-tag ok">Grade: A-</span>
+        <span class="hero-tag ok">Score: 91/100 ↑</span>
+        <span class="hero-tag ok">Location: Penfield, NY ✓</span>
+        <span class="hero-tag ok">Interview 2 Complete ✓</span>
+        <span class="hero-tag ok">CEO: "Really excited"</span>
+        <span class="hero-tag warn">Passive seeker</span>
+        <span class="hero-tag warn">AI application gap</span>
+      </div>
+      <div class="link-row">
+        <a href="https://www.linkedin.com/in/matthenwood" target="_blank" class="hero-link li">🔗 LinkedIn</a>
+        <a href="https://fathom.video/share/-FN5skMmV1EuiyecXtw5xw-Q-nMF6iJ8" target="_blank" class="hero-link rec">▶ Interview 1 Recording</a>
+        <a href="https://fathom.video/calls/620831944" target="_blank" class="hero-link rec">▶ Interview 2 Recording (Apr 1)</a>
+        <a href="https://drive.google.com/file/d/1Ew0Vgb0zc5yTZ77a4xvT-COtK1uzZmQF/view?usp=drive_link" target="_blank" class="hero-link doc">📄 Assessment File</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interview 2 Assessment -->
+  <div class="intv2-assess">
+    <div class="assess-header">
+      <span class="assess-title">Interview 2 Assessment — Patrick Biddiscombe, CEO &amp; Mala Rugg, VP People · April 1, 2026 · 61 mins</span>
+      <span class="assess-verdict verdict-advance">✓ Panel Confirmed — CEO Enthusiastic</span>
+    </div>
+    <div class="assess-grid">
+      <div class="assess-item">
+        <div class="a-lbl pos">CEO Chemistry &amp; Enthusiasm</div>
+        <div class="a-txt">Patrick B. closed the call: "I think everything you said, I got really excited." Strong rapport established immediately via mutual connections — Craig Dempster (HubSpot/Sandler) and David Williams (Merkle). Patrick B. said he would love to continue conversations.</div>
+      </div>
+      <div class="assess-item">
+        <div class="a-lbl pos">Growth-Stage Fit — Explicitly Confirmed</div>
+        <div class="a-txt">Patrick B. directly validated: "What I really like about your experience is you like that growth stage still, right? And you went back to it." He distinguished Matt from a prior VP enterprise hire who "couldn't translate it into where New Breed is today" — Matt passes that test.</div>
+      </div>
+      <div class="assess-item">
+        <div class="a-lbl pos">HubSpot Ecosystem — Eased</div>
+        <div class="a-txt">Matt disclosed Sercante does HubSpot services work, though "it's kind of one of those things we don't talk about super loudly" in the Salesforce world. Engaged substantively with Patrick B.'s HubSpot context — Data Hub, agent program, MCP server architecture — more familiarity than previously known.</div>
+      </div>
+      <div class="assess-item">
+        <div class="a-lbl pos">Operational Methodology — Confirmed</div>
+        <div class="a-txt">Mala provided New Breed's org context (5 business lines, services team ~45, RevOps as fastest-growing). Matt responded with specifics on supply-demand matching, Financial Force deployment, staffing model, backlog visibility, and utilization forecasting from the 7Summits journey — all highly relevant.</div>
+      </div>
+      <div class="assess-item">
+        <div class="a-lbl watch">AI — Honest Gap Acknowledged</div>
+        <div class="a-txt">Patrick B. shared New Breed's internal AI recommendation engine and MCP server strategy; Matt engaged thoughtfully. However, Matt noted: "We've done a lot of Agentforce work over here and it hasn't really gone anywhere." Honest, but confirms AI application remains a watch item for panel probing.</div>
+      </div>
+      <div class="assess-item">
+        <div class="a-lbl pos">Mutual Excitement — Both Sides</div>
+        <div class="a-txt">Matt closed: "It seems like you guys have a really cool company and are on to some neat things, and I would love to carry the conversation forward." Mala confirmed panel format: meet larger team, work through a current problem/case — a strong two-way signal.</div>
+      </div>
+    </div>
+    <div class="assess-summary"><strong>Score update post-Interview 2:</strong> Overall 88→91 (+3 pts). Culture Fit upgraded 4/5→4.5/5 (CEO explicitly enthusiastic; mutual connections; growth-stage alignment verbally confirmed). Stage Fit 92→95. Ecosystem Fit 82→85 (HubSpot work at Sercante disclosed). AI Readiness 60→63 (substantive engagement, honest gap). Team Leadership 85→88. All other dimensions validated and held.</div>
+    <div class="action-item">
+      <span class="ai-badge">Action Item</span>
+      <span class="ai-text"><strong>Schedule panel with Matt + full leadership team next week; include Dave; prep current problem/case for live working session.</strong> — <a href="https://fathom.video/calls/620831944?timestamp=3618.9999" target="_blank" style="color:var(--blue);">Watch: Interview 2 @ 1:00:16</a></span>
+    </div>
+  </div>
+
+  <div class="detail-grid">
+    <div class="detail-box">
+      <h4>Career Timeline</h4>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-dot" style="background:var(--nb-orange)"></div><div><div class="tl-company">Sercante (Sep 2024–Present)</div><div class="tl-role">VP of Delivery — 75-person org, 2 squads/7 pods. Building AI solutions; on track for $25M revenue. Also delivers HubSpot services (quietly).</div></div></div>
+        <div class="tl-item"><div class="tl-dot" style="background:var(--nb-orange)"></div><div><div class="tl-company">Zennify (Apr 2023–Sep 2024)</div><div class="tl-role">Chief Delivery Officer — PE-backed turnaround. Breakeven achieved; utilization 76%→83%; troubled projects −20%; team right-sized 113→85.</div></div></div>
+        <div class="tl-item"><div class="tl-dot" style="background:var(--gray)"></div><div><div class="tl-company">7Summits / IBM (May 2017–Aug 2021)</div><div class="tl-role">EVP Service Delivery — Scaled $16M→$45M, 45→250 people. Installed Financial Force PSA, built supply-demand model. Successful IBM acquisition exit.</div></div></div>
+        <div class="tl-item"><div class="tl-dot" style="background:var(--gray)"></div><div><div class="tl-company">Appirio / Wipro (Aug 2009–Apr 2017)</div><div class="tl-role">VP Salesforce Global Services — Built India delivery center. 125→1,400 employees through $500M Wipro acquisition.</div></div></div>
+      </div>
+    </div>
+    <div class="detail-box">
+      <h4>Key Differentiators</h4>
+      <ul>
+        <li>Only candidate with direct EVP Service Delivery tenure at a boutique SI scaled $16M→$45M — precise mandate match</li>
+        <li>PE-backed turnaround specialist: Zennify to breakeven, 83% peak utilization, troubled projects −20%</li>
+        <li>Two Tier-1 M&A integrations: Appirio/Wipro ($500M) + 7Summits/IBM — knows what exit-ready P&L looks like</li>
+        <li>Installed Financial Force and built supply-demand model at 7Summits — PSA/data discipline proven</li>
+        <li>HubSpot work exists at Sercante — more ecosystem proximity than originally known</li>
+      </ul>
+    </div>
+    <div class="detail-box">
+      <h4>Strengths vs. New Breed Profile</h4>
+      <ul>
+        <li>Scale & Growth track record is strongest in the pool — $14M→$20M mandate is a familiar journey</li>
+        <li>P&L ownership proven and battle-tested under PE pressure at multiple firms</li>
+        <li>Growth-stage DNA explicitly confirmed by Patrick B. in Interview 2</li>
+        <li>Strong CEO chemistry established — rare mutual connections + shared ecosystem perspective</li>
+        <li>Delivery playbooks, onboarding programs, and repeatable frameworks built at multiple boutique SIs</li>
+      </ul>
+    </div>
+    <div class="detail-box">
+      <h4>Areas to Explore in Panel</h4>
+      <ul>
+        <li>AI specifically: Agentforce hasn't scaled at Sercante — get concrete plan for New Breed's AI-first delivery</li>
+        <li>HubSpot ecosystem depth — how quickly does he formalize the ramp beyond what Sercante does quietly</li>
+        <li>Rapid transitions 2021–2024 — probe longevity intent and what he learned about fit</li>
+        <li>Comp expectations and what it takes to make this move from a passive position</li>
+        <li>Current problem/case session — evaluate live collaboration instincts with the team</li>
+      </ul>
+    </div>
+  </div>
+  <div class="detail-box" style="margin-bottom:20px;">
+    <h4>Panel Format (Confirmed by Mala)</h4>
+    <ul>
+      <li>Meet with larger leadership team (include Dave per action item)</li>
+      <li>Work through a current business problem/case together — evaluate live collaboration</li>
+      <li>Deeper dive into specific services challenges New Breed is facing right now</li>
+      <li>Pre-brief panel to assess AI learning agility, not current HubSpot knowledge</li>
+      <li>Prepare thoughtful comp discussion — he is a passive seeker; the narrative and growth story need to land</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ══ PATRICK SCHERDER ══ -->
+<div id="scherder" class="page">
+  <div class="verdict-box rank2">
+    <h4>Overall Assessment — Grade B+ · Score 79/100 · Rank #2 · Recommended for Panel</h4>
+    <p>Patrick is methodical, articulate, and brings a rare combination of PwC management consulting rigor and hands-on boutique SI operator experience. His engagement director model — a 50/50 pre-sales/delivery hybrid — directly addresses New Breed's stated structural pain points. His AI delivery approach is the most systematic of the three. Following Interview 2, Mala recommends advancing to panel. Key watch: VP-level instincts confirmed, with the autonomy step-up and CRM gap to probe further.</p>
+  </div>
+  <div class="detail-hero">
+    <div class="avatar" style="background:var(--nb-green-dark);">PS</div>
+    <div class="detail-hero-info">
+      <h2>Patrick Scherder</h2>
+      <div class="role">Sr. Director, Salesforce Practices & Customer Success · Atrium · Richmond, VA</div>
+      <div class="contact-row">
+        <span>✉ <a href="mailto:scherderp@yahoo.com" style="color:var(--blue);">scherderp@yahoo.com</a></span>
+        <span>📞 703-772-4131</span>
+      </div>
+      <div class="hero-tags">
+        <span class="hero-tag rank2">Rank #2</span>
+        <span class="hero-tag ok">Grade: B+</span>
+        <span class="hero-tag ok">Score: 79/100</span>
+        <span class="hero-tag ok">Location: Richmond, VA ✓</span>
+        <span class="hero-tag ok">Interview 2 Complete ✓</span>
+        <span class="hero-tag ok">Mala: Advance ✓</span>
+        <span class="hero-tag warn">VP-level today</span>
+        <span class="hero-tag warn">Not actively in market</span>
+      </div>
+      <div class="link-row">
+        <a href="https://www.linkedin.com/in/patrick-scherder" target="_blank" class="hero-link li">🔗 LinkedIn</a>
+        <a href="https://fathom.video/share/R97Gou8USYX2ZpMXq4zxXinJAfjEGX1w" target="_blank" class="hero-link rec">▶ Interview 1 Recording</a>
+        <a href="https://fathom.video/calls/621833829?timestamp=3736.9999" target="_blank" class="hero-link rec">▶ Interview 2 Recording (Apr 2)</a>
+        <a href="https://drive.google.com/file/d/15WtVSg2qOjK5SCmjZXF1MVaoV28DQDkB/view?usp=drive_link" target="_blank" class="hero-link doc">📄 Assessment File</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="intv2-assess">
+    <div class="assess-header">
+      <span class="assess-title">Interview 2 Assessment — Mala Rugg, VP People · April 2, 2026 · 80 mins</span>
+      <span class="assess-verdict verdict-advance">✓ Recommended for Panel</span>
+    </div>
+    <div class="assess-grid">
+      <div class="assess-item"><div class="a-lbl pos">Metrics & Accountability</div><div class="a-txt">Owns P&L; uses utilization rate and CSAT as primary measures. Understands ownership over booking numbers. Accountability rigor depth to be probed further in panel.</div></div>
+      <div class="assess-item"><div class="a-lbl pos">Org & Team Structuring</div><div class="a-txt">Discussed gross margins and revenue targets with confidence. Shared concrete examples of restructuring delivery to drive impact on target outcomes — "reimagining" concept used throughout.</div></div>
+      <div class="assess-item"><div class="a-lbl pos">Leadership Style</div><div class="a-txt">Leads 80 team members. Strong read on style throughout — player-coach mentality, direct, willing to get into the work. Specific examples to be gathered in panel.</div></div>
+      <div class="assess-item"><div class="a-lbl watch">Decision-Making Autonomy</div><div class="a-txt">Currently operates with pipeline approval gates before hiring decisions. This role would be a meaningful step up in autonomy — a growth edge, not a disqualifier.</div></div>
+      <div class="assess-item"><div class="a-lbl watch">CRM / Technical Profile</div><div class="a-txt">Does not have deep CRM expertise coming in. Consistent track record of learning into gaps — not a disqualifier, but a dimension to monitor through onboarding.</div></div>
+      <div class="assess-item"><div class="a-lbl watch">Motivation</div><div class="a-txt">Not actively in market. Loves Atrium and his current role. Engaged with this opportunity as a compelling potential next level — positive signal on selectivity and intentionality.</div></div>
+    </div>
+    <div class="assess-summary"><strong>Overall:</strong> This is a growth role for Patrick to the VP level. He has the instincts and trajectory. He could hold a VP seat at the ELT level, and we should advance him to panel.</div>
+    <div class="action-item">
+      <span class="ai-badge">Action Item</span>
+      <span class="ai-text"><strong>Schedule follow-up with Patrick Biddiscombe</strong> to discuss open questions re: Scherder before advancing to full panel. — <a href="https://fathom.video/calls/621833829?timestamp=3736.9999" target="_blank" style="color:var(--blue);">Watch: Interview 2 @ 1:02:20</a></span>
+    </div>
+  </div>
+
+  <div class="detail-grid">
+    <div class="detail-box">
+      <h4>Career Timeline</h4>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-dot" style="background:var(--nb-green)"></div><div><div class="tl-company">Atrium (Jan 2023–Present)</div><div class="tl-role">Sr. Director, Salesforce Practices & Customer Success — Leads 80-person org across US, India, LATAM. Created engagement director model. Built AI delivery catalog.</div></div></div>
+        <div class="tl-item"><div class="tl-dot" style="background:var(--nb-green)"></div><div><div class="tl-company">Tableau / Salesforce (Jan 2018–Apr 2022)</div><div class="tl-role">Director, Services Leader — Led ~1/3 of Tableau's Professional Services globally. Post-Salesforce acquisition partner management.</div></div></div>
+        <div class="tl-item"><div class="tl-dot" style="background:var(--gray)"></div><div><div class="tl-company">Stripe (Apr–Nov 2022)</div><div class="tl-role">Global Consulting Partner GTM Lead — PwC strategic alliance, GTM alignment.</div></div></div>
+        <div class="tl-item"><div class="tl-dot" style="background:var(--gray)"></div><div><div class="tl-company">PwC (10 years)</div><div class="tl-role">Federal practice then Data & Analytics (transactions/deals). Foundation in management consulting and "business value" mindset.</div></div></div>
+      </div>
+    </div>
+    <div class="detail-box">
+      <h4>Key Differentiators</h4>
+      <ul>
+        <li>Built Atrium's Engagement Director model — 50/50 pre-sales/delivery hybrid addressing New Breed's integration gap</li>
+        <li>Most rigorous AI delivery discipline: weekly usage catalog, time-savings tracking, methodology integration</li>
+        <li>Achieved 15-point gross margin improvement on Atrium's customer success team</li>
+        <li>10 years at PwC — Big 4 rigor combined with boutique SI operator experience</li>
+        <li>Oversees Agentforce (AI Agents) and Data Cloud delivery at Atrium</li>
+      </ul>
+    </div>
+    <div class="detail-box">
+      <h4>Strengths vs. New Breed Profile</h4>
+      <ul>
+        <li>AI delivery discipline most immediately applicable to New Breed's AI-first mission</li>
+        <li>Engagement director model maps directly to Taylor's sales-delivery pain point</li>
+        <li>Strong cultural resonance — shared PwC background with Mala; player-coach instincts</li>
+        <li>Atrium is a direct stage-match: growth-stage boutique CRM SI</li>
+      </ul>
+    </div>
+    <div class="detail-box">
+      <h4>Areas to Explore in Panel</h4>
+      <ul>
+        <li>Full P&L autonomy: how does he operate without pipeline approval gates</li>
+        <li>HubSpot ecosystem ramp — CRM-adjacent but not ecosystem-native</li>
+        <li>Apply the engagement director model to New Breed's structure — what changes Day 1</li>
+        <li>$14M→$20M growth journey — where does he invest first</li>
+        <li>Compensation alignment to New Breed's structure</li>
+      </ul>
+    </div>
+  </div>
+  <div class="action-item">
+    <span class="ai-badge">Action Item</span>
+    <span class="ai-text"><strong>Schedule panel interview with Patrick Scherder + New Breed executives</strong> following CEO sync. He is motivated but not actively in market — maintain momentum. — <a href="https://fathom.video/share/R97Gou8USYX2ZpMXq4zxXinJAfjEGX1w?timestamp=3415.9999" target="_blank" style="color:var(--blue);">Watch: Interview 1 @ 56:57</a></span>
+  </div>
+</div>
+
+<!-- ══ ANDRÉS GLUECKSMANN ══ -->
+<div id="andres" class="page">
+  <div class="verdict-box not-adv">
+    <h4>Overall Assessment — Grade C- · Score 55/100 · Not Recommended for Advancement</h4>
+    <p>Andrés brings a strong innovation and culture-building profile, but following two interviews the assessment is that his profile does not meet the core operator requirements for this role. The primary gap is the absence of demonstrated direct ownership of services P&L, utilization control, margin improvement, and delivery economics. Experience is concentrated in large enterprise environments. The role requires a hands-on delivery operator with proven boutique SI economics discipline.</p>
+  </div>
+  <div class="detail-hero">
+    <div class="avatar" style="background:var(--slate);">AG</div>
+    <div class="detail-hero-info">
+      <h2>Andrés Gluecksmann</h2>
+      <div class="role">Senior Director, Services · Salesforce (via Traction on Demand) · Maryland / DC Area</div>
+      <div class="contact-row">
+        <span>✉ <a href="mailto:andresglue@gmail.com" style="color:var(--blue);">andresglue@gmail.com</a></span>
+        <span>📞 +1 301-257-3973</span>
+      </div>
+      <div class="hero-tags">
+        <span class="hero-tag neutral">Not Recommended</span>
+        <span class="hero-tag ok">Culture: 4/5</span>
+        <span class="hero-tag ok">Global Exp: 4/5</span>
+        <span class="hero-tag ok">Innovation Mindset</span>
+        <span class="hero-tag neutral">P&L ownership gap</span>
+        <span class="hero-tag neutral">Op. Rigor: 2/5</span>
+      </div>
+      <div class="link-row">
+        <a href="https://www.linkedin.com/in/agluecksmann" target="_blank" class="hero-link li">🔗 LinkedIn</a>
+        <a href="https://fathom.video/share/zxccjHysxwWjt_afa-cv-H5Meva9iocG" target="_blank" class="hero-link rec">▶ Interview 1 Recording</a>
+        <a href="https://fathom.video/share/tyUv27YUyawpTmH-GbsqtwKmhuoNosgP" target="_blank" class="hero-link rec">▶ Interview 2 Recording (Apr 1)</a>
+      </div>
+    </div>
+  </div>
+  <div class="intv2-assess">
+    <div class="assess-header">
+      <span class="assess-title">Interview 2 Assessment — Patrick Biddiscombe, CEO &amp; Mala Rugg, VP People · April 1, 2026 · 53 mins</span>
+      <span class="assess-verdict verdict-notadv">Not Recommended for Advancement</span>
+    </div>
+    <div class="assess-grid">
+      <div class="assess-item"><div class="a-lbl pos">Culture &amp; Leadership Presence</div><div class="a-txt">Strong cultural energy, high EQ, genuine alignment to the HubSpot opportunity. Leadership presence and communication were evident throughout both conversations.</div></div>
+      <div class="assess-item"><div class="a-lbl pos">Innovation &amp; AI Enablement</div><div class="a-txt">Founded and scaled a 2,000-member AI upskilling community at Salesforce. Demonstrated IP-led services tools and change management at enterprise scale.</div></div>
+      <div class="assess-item"><div class="a-lbl concern">Delivery Economics Gap</div><div class="a-txt">Across two conversations, no clear metrics around owned P&L, utilization targets, margin percentages, or EBITDA discipline surfaced. Results described in terms of influence and support, not direct accountability.</div></div>
+      <div class="assess-item"><div class="a-lbl concern">Operator Profile Mismatch</div><div class="a-txt">Experience concentrated in large enterprise environments. Operating mode has drifted toward strategy and oversight versus the hands-on boutique SI delivery economics the role requires.</div></div>
+    </div>
+    <div class="assess-summary"><strong>True Search Scorecard — Post Interview 2:</strong> Scale/Growth 3/5 · Op. Rigor 2/5 (revised from 3/5) · Implementation/Services 3/5 (revised from 3.5/5) · Global Experience 4/5 · Culture Fit 4/5. Overall score revised from 71 to 55.</div>
+    <div class="action-item">
+      <span class="ai-badge">Action Item</span>
+      <span class="ai-text"><strong>True Search to gracefully close the process with Andrés</strong> — unwind the previously suggested Mala follow-up (Fri 3–4 ET). Frame close around role fit and timing. Maintain a strong candidate experience. — <a href="https://fathom.video/share/tyUv27YUyawpTmH-GbsqtwKmhuoNosgP?timestamp=3142.9999" target="_blank" style="color:var(--blue);">Watch: Interview 2 @ 52:17</a></span>
+    </div>
+  </div>
+</div>
+
+<!-- ══ RECOMMENDATIONS ══ -->
+<div id="nextsteps" class="page">
+  <div class="mandate" style="margin-bottom:28px;">
+    <div class="mandate-item"><span class="lbl">Immediate Priority</span><span class="val orange">Schedule both panels ASAP</span></div>
+    <div class="mandate-item"><span class="lbl">Henwood Panel</span><span class="val green">Next week — include Dave, prep case</span></div>
+    <div class="mandate-item"><span class="lbl">Scherder Pre-Panel</span><span class="val orange">CEO sync first</span></div>
+    <div class="mandate-item"><span class="lbl">Gluecksmann</span><span class="val red">Process Closed</span></div>
+    <div class="mandate-item"><span class="lbl">Panel Format</span><span class="val">2.5-hr: Taylor, Patrick B., Mala</span></div>
+  </div>
+
+  <p class="section-head">Recommended Next Steps by Candidate</p>
+  <div class="next-grid">
+    <div class="next-card">
+      <div class="nc-head"><div class="nc-dot" style="background:var(--nb-orange)"></div><h4>Matt Henwood</h4></div>
+      <div class="status advance">✓ Panel Confirmed — Schedule Now</div>
+      <ol>
+        <li><strong>Schedule panel for next week</strong> — Mala confirmed this directly in Interview 2; include Dave; prep a current business problem/case for live working session</li>
+        <li>True Search to re-engage with comp discussion in parallel — he is a passive seeker and will need a compelling package conversation to activate</li>
+        <li>Pre-brief panel on AI question — assess what he can build at New Breed, not what Agentforce has done at Sercante</li>
+        <li>Panel focus: $14M→$20M plan, Day 1–90 priorities, AI roadmap, long-term stability intent</li>
+        <li>Reference checks: former 7Summits CEO and Zennify PE sponsor (Tercera)</li>
+      </ol>
+    </div>
+    <div class="next-card">
+      <div class="nc-head"><div class="nc-dot" style="background:var(--nb-green)"></div><h4>Patrick Scherder</h4></div>
+      <div class="status advance">✓ Advance to Panel (Post CEO Sync)</div>
+      <ol>
+        <li><strong>Schedule CEO sync first</strong> — Patrick B. flagged open questions after Interview 2 to discuss before panel</li>
+        <li>Then schedule panel — Scherder is motivated but not actively in market; maintain momentum</li>
+        <li>Panel focus: P&L autonomy, HubSpot ramp plan, Day 1 operating priorities, culture fit with full ELT</li>
+        <li>Have him bring his engagement director framework — evaluate it live with the team</li>
+        <li>Address no-equity-at-signing early to avoid late-stage friction</li>
+      </ol>
+    </div>
+    <div class="next-card">
+      <div class="nc-head"><div class="nc-dot" style="background:var(--slate)"></div><h4>Andrés Gluecksmann</h4></div>
+      <div class="status notadv">Process Closed</div>
+      <ol>
+        <li>True Search to reach out and thoughtfully close the process with Andrés</li>
+        <li>Unwind the previously suggested Mala follow-up (Fri 3–4 ET)</li>
+        <li>Frame the close around role fit and timing — relationship should be preserved</li>
+        <li>Do not reference specific scoring in the decline communication</li>
+        <li>Document in True Search CRM for future consideration in a different role profile</li>
+      </ol>
+    </div>
+  </div>
+  <div class="action-item">
+    <span class="ai-badge">Action Item</span>
+    <span class="ai-text"><strong>Schedule Henwood panel for next week (include Dave; prep case)</strong> and Scherder CEO sync in parallel. Both candidates should be moving simultaneously to maintain momentum and a competitive process.</span>
+  </div>
+
+  <p class="section-head">Panel Interview Guide — Advancing Candidates</p>
+  <div class="criteria-table">
+    <table>
+      <thead><tr><th>Panel Member</th><th>Focus Area</th><th>Suggested Questions</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Taylor Forest</strong><br><span style="color:var(--text-muted);font-weight:400;font-size:11px;">COO / CSO</span></td><td>Services growth vision, operating model, mandate ownership</td><td><div class="q-item">Walk us through exactly how you would approach the $14M→$20M growth mandate in Year 1.</div><div class="q-item">How do you think about organic growth vs. M&A to hit the target?</div><div class="q-item">What does your first 90 days look like — where do you start?</div></td></tr>
+        <tr><td><strong>Patrick Biddiscombe</strong><br><span style="color:var(--text-muted);font-weight:400;font-size:11px;">CEO</span></td><td>Executive presence, C-suite partnership, strategic alignment, sales-services alignment, pre-sales motion, expansion revenue</td><td><div class="q-item">How have you partnered with a CEO to align services growth with company strategy?</div><div class="q-item">Tell me about a time you pushed back on leadership with data — what happened?</div><div class="q-item">What's your philosophy on building vs. buying capabilities to scale?</div><div class="q-item">How have you structured the relationship between sales and delivery to reduce friction?</div><div class="q-item">Walk through how you think about expansion and retention as a services motion.</div><div class="q-item">What metrics do you use to measure a healthy sales-to-delivery handoff?</div></td></tr>
+        <tr><td><strong>Mala Rugg</strong><br><span style="color:var(--text-muted);font-weight:400;font-size:11px;">VP People</span></td><td>Culture, team leadership, coaching, performance standards</td><td><div class="q-item">Describe a difficult people decision you had to make — what did you do and what did you learn?</div><div class="q-item">How do you build a high-performance culture while scaling quickly?</div><div class="q-item">What does your approach to performance management look like in practice?</div></td></tr>
+        <tr><td><strong>Dana Biddiscombe</strong><br><span style="color:var(--text-muted);font-weight:400;font-size:11px;">CFO</span></td><td>P&L ownership, margin discipline, financial accountability</td><td><div class="q-item">Walk me through a P&L you have owned — what were the key levers you managed?</div><div class="q-item">How do you balance investing in team growth vs. protecting EBITDA margins?</div><div class="q-item">What utilization model have you operated and what's your target for a 55-person org?</div></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══ CHANGE LOG ══ -->
+<div id="changelog" class="page">
+  <div class="mandate" style="margin-bottom:28px;">
+    <div class="mandate-item"><span class="lbl">Current Version</span><span class="val orange">v3.2</span></div>
+    <div class="mandate-item"><span class="lbl">Previous Version</span><span class="val">v3.1 · April 3, 2026</span></div>
+    <div class="mandate-item"><span class="lbl">Source Files Added</span><span class="val green">Matthew Henwood 2nd Interview</span></div>
+    <div class="mandate-item"><span class="lbl">Updated</span><span class="val">April 3, 2026</span></div>
+  </div>
+
+  <p class="section-head">Version History</p>
+  <div class="cl-table">
+    <table>
+      <thead><tr><th>Version</th><th>Date</th><th>Type</th><th>Section</th><th>What Changed</th></tr></thead>
+      <tbody>
+        <tr><td><strong>v3.2</strong></td><td>Apr 3, 2026</td><td><span class="cl-badge new">New</span></td><td>Matt Henwood — Interview 2 Assessment</td><td>Added Interview 2 summary (April 1, 61 mins, Patrick B. & Mala). Six-dimension assessment grid covering: CEO chemistry & enthusiasm, growth-stage fit confirmation, HubSpot ecosystem eased, operational methodology confirmed, AI honest gap acknowledged, and mutual excitement. Recording link added: fathom.video/calls/620831944.</td></tr>
+        <tr><td><strong>v3.2</strong></td><td>Apr 3, 2026</td><td><span class="cl-badge update">Update</span></td><td>Matt Henwood — Score</td><td>Overall score updated 88→91 (+3 pts). Culture Fit upgraded 4/5→4.5/5 (CEO "really excited"; mutual connections; growth-stage alignment explicitly confirmed). Stage Fit bar 92→95. Ecosystem Fit bar 82→85 (HubSpot work at Sercante disclosed). AI Readiness bar 60→63 (substantive engagement, honest gap). Team Leadership bar 85→88. Grade remains A-.</td></tr>
+        <tr><td><strong>v3.2</strong></td><td>Apr 3, 2026</td><td><span class="cl-badge update">Update</span></td><td>Matt Henwood — Verdict Box</td><td>Updated to reflect Interview 2 outcome: "Panel Confirmed · Updated April 3, 2026." Score change from 88→91 noted in text with rationale.</td></tr>
+        <tr><td><strong>v3.2</strong></td><td>Apr 3, 2026</td><td><span class="cl-badge update">Update</span></td><td>Matt Henwood — Hero Tags</td><td>Added tags: "Interview 2 Complete ✓", "CEO: 'Really excited'". Score badge updated to 91/100 ↑. Tags updated to reflect Sercante HubSpot work disclosed (removed "HubSpot ramp needed" watch tag; retained "AI application gap").</td></tr>
+        <tr><td><strong>v3.2</strong></td><td>Apr 3, 2026</td><td><span class="cl-badge update">Update</span></td><td>Matt Henwood — Overview Card</td><td>Banner added: "✅ Interview 2 complete — Patrick B.: 'Really excited' · Panel scheduled." Score badge 88→91. Tags updated. "HubSpot ramp needed" removed; replaced with "CEO: 'Really excited'".</td></tr>
+        <tr><td><strong>v3.2</strong></td><td>Apr 3, 2026</td><td><span class="cl-badge new">New</span></td><td>Matt Henwood — ACTION ITEM</td><td>Added action item: "Schedule panel with Matt + full leadership team next week; include Dave; prep current problem/case for live working session." Timestamped Fathom link included (@ 1:00:16).</td></tr>
+        <tr><td><strong>v3.2</strong></td><td>Apr 3, 2026</td><td><span class="cl-badge update">Update</span></td><td>Scorecard Comparison Table — Henwood Column</td><td>Column header updated from "Interview 1 only" to "Interview 2 complete ✓ Apr 1". All five dimension rows updated with Interview 2 delta badges (✓ Validated for Scale, Op. Rigor, Implementation, Global; ↑ Strengthened for Culture Fit). Overall row shows 88→91 with "↑ +3 pts" badge.</td></tr>
+        <tr><td><strong>v3.2</strong></td><td>Apr 3, 2026</td><td><span class="cl-badge update">Update</span></td><td>Recommendations — Mandate Bar &amp; Henwood Card</td><td>Mandate bar updated: "Henwood Panel: Next week — include Dave, prep case." Henwood action card status updated to "Panel Confirmed — Schedule Now." Step 1 is now scheduling the next-week panel per Mala's Interview 2 confirmation.</td></tr>
+        <tr><td><strong>v3.1</strong></td><td>Apr 3, 2026</td><td><span class="cl-badge restored">Restored</span></td><td>All sections</td><td>Restored Change Log tab, Fathom recording links with timestamps, candidate contact details, and ACTION ITEM tags from v3.0 internal version.</td></tr>
+        <tr><td><strong>v3.0</strong></td><td>Apr 3, 2026</td><td><span class="cl-badge new">New</span></td><td>Patrick Scherder</td><td>Added Mala Rugg's Interview 2 notes (ADVANCE verdict, 6-dimension grid). Added Interview 2 summary (Apr 2, 80 mins). Updated verdict, tags, risks, panel focus. Recording link added.</td></tr>
+        <tr><td><strong>v2.0</strong></td><td>Apr 3, 2026</td><td><span class="cl-badge new">New</span></td><td>Andrés Gluecksmann</td><td>Added Interview 2 summary (Apr 1, 53 mins) and Patrick B.'s FAIL scoring/notes. Op. Rigor revised 3/5→2/5; Implementation 3.5/5→3/5. Score 71→55, grade B-→C-. Change Log tab introduced.</td></tr>
+        <tr><td><strong>v1.0</strong></td><td>Mar 2026</td><td><span class="cl-badge new">Initial</span></td><td>All Sections</td><td>Initial dashboard published: 3 candidates, mandate overview, True Search scorecards, profiles, panel guide, next steps, success profile.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="section-head">Source Files by Version</p>
+  <div class="two-col">
+    <div class="detail-box">
+      <h4>Files Added in v3.2</h4>
+      <ul>
+        <li><strong>Matthew Henwood 2nd Interview</strong> — 61-min Zoom transcript (April 1, 2026) with Patrick Biddiscombe and Mala Rugg. Fathom: fathom.video/calls/620831944. CEO closed: "I got really excited." Panel confirmed by Mala.</li>
+      </ul>
+    </div>
+    <div class="detail-box">
+      <h4>Files from Prior Versions</h4>
+      <ul>
+        <li><strong>v3.0:</strong> Patrick Scherder 2nd Interview (80 mins, Apr 2) + Mala's Notes</li>
+        <li><strong>v2.0:</strong> Andrés Gluecksmann Interview 2 (53 mins, Apr 1) + Patrick B.'s Scoring/Notes</li>
+        <li><strong>v1.0:</strong> All three candidate assessments, Interview 1 transcripts, position description</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <div class="footer">
   <div class="footer-logo">
-    <div class="mark">NB</div>
+    <div class="footer-mark">NB</div>
     <span>New Breed Revenue &nbsp;·&nbsp; <a href="https://www.newbreedrevenue.com">newbreedrevenue.com</a></span>
   </div>
-  <span>Confidential · Head of Services Executive Search · March 2026 · True Search</span>
+  <span>Strictly Confidential &nbsp;·&nbsp; Head of Services Executive Search &nbsp;·&nbsp; v3.2 · April 3, 2026 &nbsp;·&nbsp; True Search</span>
 </div>
 
 <script>
@@ -697,7 +801,7 @@
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
     document.getElementById(id).classList.add('active');
-    const map = {overview:0,henwood:1,scherder:2,andres:3,nextsteps:4};
+    const map = {overview:0,henwood:1,scherder:2,andres:3,nextsteps:4,changelog:5};
     document.querySelectorAll('.nav-btn')[map[id]].classList.add('active');
     window.scrollTo({top:0,behavior:'smooth'});
   }
